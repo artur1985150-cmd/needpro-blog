@@ -248,6 +248,38 @@ td{background:var(--sheet)}
 .sources li::marker{font:600 .875rem var(--frame);font-variant-numeric:tabular-nums;color:var(--ink-2)}
 .how{max-width:var(--measure);margin-top:2.4rem}
 
+/* ---------- the calculator on a tool page: a tray cut like the SIM, fields as punched slots ---------- */
+.calc{position:relative;margin:2rem 0 2.4rem;padding:4px clamp(14px,3vw,24px) 20px;background:var(--tint);border-top:1px solid var(--ink);border-radius:0 0 8px 8px;clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,0 100%);font:400 1rem/1.5 var(--frame)}
+.calc h2{margin:.9em 0 .4em}
+.calc [hidden]{display:none!important}
+.calc p{hyphens:manual}
+.calc fieldset{margin:0;padding:0;border:0;min-width:0}
+.calc legend{padding:0;font:700 1.0625rem/1.3 var(--frame);color:var(--ink)}
+.calc-hint{margin:.25rem 0 .6rem;font:400 var(--t-label)/1.45 var(--frame);color:var(--ink-2);max-width:var(--measure)}
+.calc-rows{list-style:none;margin:0;padding:0}
+.calc-row{position:relative;padding:12px 0;border-bottom:1px dashed var(--rule)}
+.calc-row .calc-remove{position:absolute;top:2px;right:0;margin:0}
+.calc-row:first-child{border-top:1px dashed var(--rule)}
+.calc-row legend{font:650 .9375rem/1.3 var(--frame);color:var(--ink-2);margin-bottom:6px}
+.calc-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:4px 16px}
+.calc-field{min-width:0;margin:6px 0}
+.calc-field label{display:block;margin-bottom:4px;font:600 .9375rem/1.3 var(--frame);color:var(--ink)}
+.calc input{display:block;width:100%;min-width:0;max-width:16rem;min-height:44px;padding:6px 10px;font:500 1rem/1.2 var(--frame);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--sheet);border:1px solid var(--ink-2);border-radius:7px}
+.calc input[aria-invalid=true]{border:2px solid var(--ink);box-shadow:inset 0 -3px 0 var(--chip)}
+.calc-error{margin:.3rem 0 0;font:600 var(--t-label)/1.4 var(--frame);color:var(--ink)}
+.calc-error::before{content:"";display:inline-block;width:.55em;height:.55em;margin-right:.45em;background:var(--chip);border:1px solid var(--chip-line);transform:rotate(45deg) translateY(-.1em)}
+.calc-check,.calc-plan{margin-top:18px}
+.calc-add,.calc-remove,.calc-reset{display:inline-flex;align-items:center;min-height:44px;margin:8px 0 0;padding:0 14px;font:600 .9375rem/1 var(--frame);color:var(--link);background:transparent;border:1px solid var(--link);border-radius:10px;cursor:pointer}
+.calc-remove,.calc-reset{border-color:transparent;padding:0 4px;text-decoration:underline;text-decoration-color:var(--underline);text-underline-offset:.2em}
+.calc-add:hover,.calc-remove:hover,.calc-reset:hover{text-decoration:underline;text-decoration-color:currentColor}
+.calc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:20px}
+.calc-actions .button{cursor:pointer}
+.calc-result:not(:empty){margin-top:22px;padding-top:6px;border-top:1.5px dashed var(--rule)}
+.calc-result p{margin:.55rem 0;max-width:var(--measure);font:400 1.0625rem/1.5 var(--read)}
+.calc-result .spec{margin:10px 0 14px;background:var(--sheet)}
+.calc-result .spec div{padding-left:12px}
+.calc-result .calc-note{font:400 var(--t-label)/1.5 var(--frame);color:var(--ink-2)}
+
 /* ---------- lists of articles: ruled rows, dates tight to the right ---------- */
 .entries{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
 .entries li{display:grid;gap:6px;padding:16px 0 18px;border-bottom:1px solid var(--rule);break-inside:avoid}
@@ -390,6 +422,7 @@ footer.site .small{color:var(--on-plate-2)}
 <section class="faq"><h2 id="questions">Частые вопросы</h2><details><summary>Нужно ли регистрировать телефон, если я в Турции на неделю?</summary><p>Если вы пользуетесь своей SIM в роуминге или туристической eSIM, регистрация не нужна: блокировка IMEI касается работы аппарата с турецкими SIM-картами. С турецкой SIM без регистрации телефон проработает 120 дней.</p></details><details><summary>Сколько стоит регистрация телефона в Турции?</summary><p>Сбор (harç) устанавливают каждый год. В выдаче для 2026 года называют разные суммы, поэтому мы число не пишем: точную сумму показывает сама оплата на сайте налоговой службы Турции или e-Devlet. Проверьте её там в день оплаты.</p></details><details><summary>Что будет, если не зарегистрировать телефон за 120 дней?</summary><p>Аппарат отключат от связи в турецких сетях. Блокировка привязана к IMEI телефона, а не к SIM, поэтому покупка новой SIM-карты не поможет.</p></details><details><summary>Можно ли зарегистрировать второй телефон?</summary><p>По правилам таможни без пошлины ввозят один телефон за три календарных года. Если за этот срок вы уже регистрировали аппарат, второй по этой льготе не зарегистрировать, и через 120 дней его заблокируют.</p></details><details><summary>Как проверить, есть ли у меня право на регистрацию?</summary><p>Минторг Турции отсылает к услуге BTK на e-Devlet: turkiye.gov.tr/btk-imei-kayit-hakki-sorgulama. Там видно, остался ли у вас лимит на ввоз телефона.</p></details></section>
 <section class="sources"><h2 id="sources">Источники</h2><ol><li><a href="https://tuketici.btk.gov.tr/merkezi-cihaz-kayit-sistemi" rel="noopener">Merkezi Cihaz Kayıt Sistemi</a>, BTK (регулятор связи Турции)</li><li><a href="https://ticaret.gov.tr/gumruk-muhafaza/sikca-sorulan-sorular" rel="noopener">Gümrük Muhafaza — sıkça sorulan sorular</a>, Министерство торговли Турции (Ticaret Bakanlığı)</li><li><a href="https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/06/fe7097fa-2600-4624-b761-e87dc5ffdbdd.pdf" rel="noopener">Kurul Kararı 2026/İK-THD/125 от 11 мая 2026 года</a>, BTK (регулятор связи Турции)</li></ol></section>
 <p class="small how"><a href="/ru/about/">Как мы пишем эти страницы</a></p>
+
 <section class="related"><h2 id="read-next">Читайте дальше</h2><ul class="entries"><li><a href="/ru/internet-i-svyaz/esim-proverit/"><span class="entry-title">Как проверить, поддерживает ли телефон eSIM</span><span class="entry-desc">Три проверки до покупки: модель (iPhone XS и новее), пункт «Добавить eSIM» в настройках и привязка к оператору. Плюс когда ставить eSIM и почему без звонков.</span></a><time datetime="2026-11-03">3 ноября 2026 г.</time></li><li><a href="/ru/zhile/vnzh-turciya/"><span class="entry-title">Как получить ВНЖ в Турции: правила Göç İdaresi</span><span class="entry-desc">ВНЖ (икамет) в Турции подают онлайн в e-İkamet, потом идут на приём с документами. Срок решения — до 90 дней, краткосрочный ВНЖ дают максимум на 2 года.</span></a><time datetime="2026-11-04">4 ноября 2026 г.</time></li></ul></section>
 </article><div class="bot-everywhere"><aside class="bot" aria-labelledby="bot-h"><div class="carrier"><div class="punch" aria-hidden="true"><svg class="chip-big" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg></div><div class="bot-text"><h2 id="bot-h">Спросите NeedPro</h2>
 <p>Опишите ситуацию своими словами. Бот ответит проверенным фактом, ссылкой на официальный источник и датой проверки.</p>

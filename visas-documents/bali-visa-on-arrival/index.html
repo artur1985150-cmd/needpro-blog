@@ -247,6 +247,38 @@ td{background:var(--sheet)}
 .sources li::marker{font:600 .875rem var(--frame);font-variant-numeric:tabular-nums;color:var(--ink-2)}
 .how{max-width:var(--measure);margin-top:2.4rem}
 
+/* ---------- the calculator on a tool page: a tray cut like the SIM, fields as punched slots ---------- */
+.calc{position:relative;margin:2rem 0 2.4rem;padding:4px clamp(14px,3vw,24px) 20px;background:var(--tint);border-top:1px solid var(--ink);border-radius:0 0 8px 8px;clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,0 100%);font:400 1rem/1.5 var(--frame)}
+.calc h2{margin:.9em 0 .4em}
+.calc [hidden]{display:none!important}
+.calc p{hyphens:manual}
+.calc fieldset{margin:0;padding:0;border:0;min-width:0}
+.calc legend{padding:0;font:700 1.0625rem/1.3 var(--frame);color:var(--ink)}
+.calc-hint{margin:.25rem 0 .6rem;font:400 var(--t-label)/1.45 var(--frame);color:var(--ink-2);max-width:var(--measure)}
+.calc-rows{list-style:none;margin:0;padding:0}
+.calc-row{position:relative;padding:12px 0;border-bottom:1px dashed var(--rule)}
+.calc-row .calc-remove{position:absolute;top:2px;right:0;margin:0}
+.calc-row:first-child{border-top:1px dashed var(--rule)}
+.calc-row legend{font:650 .9375rem/1.3 var(--frame);color:var(--ink-2);margin-bottom:6px}
+.calc-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:4px 16px}
+.calc-field{min-width:0;margin:6px 0}
+.calc-field label{display:block;margin-bottom:4px;font:600 .9375rem/1.3 var(--frame);color:var(--ink)}
+.calc input{display:block;width:100%;min-width:0;max-width:16rem;min-height:44px;padding:6px 10px;font:500 1rem/1.2 var(--frame);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--sheet);border:1px solid var(--ink-2);border-radius:7px}
+.calc input[aria-invalid=true]{border:2px solid var(--ink);box-shadow:inset 0 -3px 0 var(--chip)}
+.calc-error{margin:.3rem 0 0;font:600 var(--t-label)/1.4 var(--frame);color:var(--ink)}
+.calc-error::before{content:"";display:inline-block;width:.55em;height:.55em;margin-right:.45em;background:var(--chip);border:1px solid var(--chip-line);transform:rotate(45deg) translateY(-.1em)}
+.calc-check,.calc-plan{margin-top:18px}
+.calc-add,.calc-remove,.calc-reset{display:inline-flex;align-items:center;min-height:44px;margin:8px 0 0;padding:0 14px;font:600 .9375rem/1 var(--frame);color:var(--link);background:transparent;border:1px solid var(--link);border-radius:10px;cursor:pointer}
+.calc-remove,.calc-reset{border-color:transparent;padding:0 4px;text-decoration:underline;text-decoration-color:var(--underline);text-underline-offset:.2em}
+.calc-add:hover,.calc-remove:hover,.calc-reset:hover{text-decoration:underline;text-decoration-color:currentColor}
+.calc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:20px}
+.calc-actions .button{cursor:pointer}
+.calc-result:not(:empty){margin-top:22px;padding-top:6px;border-top:1.5px dashed var(--rule)}
+.calc-result p{margin:.55rem 0;max-width:var(--measure);font:400 1.0625rem/1.5 var(--read)}
+.calc-result .spec{margin:10px 0 14px;background:var(--sheet)}
+.calc-result .spec div{padding-left:12px}
+.calc-result .calc-note{font:400 var(--t-label)/1.5 var(--frame);color:var(--ink-2)}
+
 /* ---------- lists of articles: ruled rows, dates tight to the right ---------- */
 .entries{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
 .entries li{display:grid;gap:6px;padding:16px 0 18px;border-bottom:1px solid var(--rule);break-inside:avoid}
@@ -423,6 +455,7 @@ footer.site .small{color:var(--on-plate-2)}
 <section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>How much is the Bali visa on arrival in 2026?</summary><p>Rp 500,000 for the B1 Tourist visa on arrival, according to the official e-Visa site's visa selection on 31 October 2026. The Bali tourist levy of Rp 150,000 is a separate payment.</p></details><details><summary>How long can I stay on a Bali visa on arrival?</summary><p>Up to 30 days. The official site says the B1 visa is extendable for another 30 days, so the longest stay on it is 60 days if the extension is granted.</p></details><details><summary>Can I get a visa on arrival online before I fly to Bali?</summary><p>Yes. The electronic version (e-VOA) is applied for on evisa.imigrasi.go.id and paid by card or SIMPONI. One application can cover up to 5 people.</p></details><details><summary>Do US, UK, Australian and Indian citizens get a visa on arrival for Bali?</summary><p>On 31 October 2026 the official visa selection offered B1 Tourist (Visa On Arrival) for passports of the USA, the UK (British citizen), Australia and India, among many others. Check your own passport on the site.</p></details><details><summary>What documents do I need for the Bali visa on arrival?</summary><p>A passport valid for at least 6 months and an outbound ticket from Indonesia, shown to the immigration officer on arrival. The site also asks you to have enough money for your stay.</p></details></section>
 <section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://evisa.imigrasi.go.id/web/visa-selection" rel="noopener">Visa selection: B1 Tourist (Visa On Arrival)</a>, Directorate General of Immigration, Indonesia (official e-Visa website)</li><li><a href="https://evisa.imigrasi.go.id/" rel="noopener">The Official e-Visa Website for Indonesia</a>, Directorate General of Immigration, Indonesia</li><li><a href="https://lovebali.baliprov.go.id/faq" rel="noopener">FAQ: Foreign Tourists Levy</a>, Love Bali (Bali Provincial Government)</li><li><a href="https://www.beacukai.go.id/barang-penumpang" rel="noopener">Barang Penumpang (passenger goods)</a>, Directorate General of Customs and Excise (Bea Cukai), Indonesia</li></ol></section>
 <p class="small how"><a href="/about/">How we write these pages</a></p>
+
 <section class="related"><h2 id="read-next">Read next</h2><ul class="entries"><li><a href="/where-to-stay/bali-tourist-tax/"><span class="entry-title">Bali tourist tax 2026: Rp 150,000, how and when to pay</span><span class="entry-desc">Bali charges foreign tourists Rp 150,000 per person, once per trip, paid cashless online via Love Bali or at airport counters. KITAS holders are exempt.</span></a><time datetime="2026-11-02">2 November 2026</time></li><li><a href="/visas-documents/passport-validity/"><span class="entry-title">Passport validity requirements by country: 7 rules</span><span class="entry-desc">Schengen wants 3 months after you leave and an issue date under 10 years; UAE and India want 6 months; Turkey wants your stay plus 60 days. Sources inside.</span></a><time datetime="2026-11-02">2 November 2026</time></li><li><a href="/visas-documents/thailand-visa-exemption/"><span class="entry-title">Thailand visa exemption 2026: 30 days, not 60</span><span class="entry-desc">Since 15 September 2026 Thailand's tourist visa exemption gives 30 days, not 60. You need an onward ticket and a TDAC arrival card filed 3 days ahead.</span></a><time datetime="2026-11-06">6 November 2026</time></li></ul></section>
 </article><div class="bot-everywhere"><aside class="bot" aria-labelledby="bot-h"><div class="carrier"><div class="punch" aria-hidden="true"><svg class="chip-big" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg></div><div class="bot-text"><h2 id="bot-h">Ask NeedPro</h2>
 <p>Describe your situation in your own words. The bot answers with a checked fact, the official source and the date it was checked.</p>

@@ -245,6 +245,38 @@ td{background:var(--sheet)}
 .sources li::marker{font:600 .875rem var(--frame);font-variant-numeric:tabular-nums;color:var(--ink-2)}
 .how{max-width:var(--measure);margin-top:2.4rem}
 
+/* ---------- the calculator on a tool page: a tray cut like the SIM, fields as punched slots ---------- */
+.calc{position:relative;margin:2rem 0 2.4rem;padding:4px clamp(14px,3vw,24px) 20px;background:var(--tint);border-top:1px solid var(--ink);border-radius:0 0 8px 8px;clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,0 100%);font:400 1rem/1.5 var(--frame)}
+.calc h2{margin:.9em 0 .4em}
+.calc [hidden]{display:none!important}
+.calc p{hyphens:manual}
+.calc fieldset{margin:0;padding:0;border:0;min-width:0}
+.calc legend{padding:0;font:700 1.0625rem/1.3 var(--frame);color:var(--ink)}
+.calc-hint{margin:.25rem 0 .6rem;font:400 var(--t-label)/1.45 var(--frame);color:var(--ink-2);max-width:var(--measure)}
+.calc-rows{list-style:none;margin:0;padding:0}
+.calc-row{position:relative;padding:12px 0;border-bottom:1px dashed var(--rule)}
+.calc-row .calc-remove{position:absolute;top:2px;right:0;margin:0}
+.calc-row:first-child{border-top:1px dashed var(--rule)}
+.calc-row legend{font:650 .9375rem/1.3 var(--frame);color:var(--ink-2);margin-bottom:6px}
+.calc-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:4px 16px}
+.calc-field{min-width:0;margin:6px 0}
+.calc-field label{display:block;margin-bottom:4px;font:600 .9375rem/1.3 var(--frame);color:var(--ink)}
+.calc input{display:block;width:100%;min-width:0;max-width:16rem;min-height:44px;padding:6px 10px;font:500 1rem/1.2 var(--frame);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--sheet);border:1px solid var(--ink-2);border-radius:7px}
+.calc input[aria-invalid=true]{border:2px solid var(--ink);box-shadow:inset 0 -3px 0 var(--chip)}
+.calc-error{margin:.3rem 0 0;font:600 var(--t-label)/1.4 var(--frame);color:var(--ink)}
+.calc-error::before{content:"";display:inline-block;width:.55em;height:.55em;margin-right:.45em;background:var(--chip);border:1px solid var(--chip-line);transform:rotate(45deg) translateY(-.1em)}
+.calc-check,.calc-plan{margin-top:18px}
+.calc-add,.calc-remove,.calc-reset{display:inline-flex;align-items:center;min-height:44px;margin:8px 0 0;padding:0 14px;font:600 .9375rem/1 var(--frame);color:var(--link);background:transparent;border:1px solid var(--link);border-radius:10px;cursor:pointer}
+.calc-remove,.calc-reset{border-color:transparent;padding:0 4px;text-decoration:underline;text-decoration-color:var(--underline);text-underline-offset:.2em}
+.calc-add:hover,.calc-remove:hover,.calc-reset:hover{text-decoration:underline;text-decoration-color:currentColor}
+.calc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:20px}
+.calc-actions .button{cursor:pointer}
+.calc-result:not(:empty){margin-top:22px;padding-top:6px;border-top:1.5px dashed var(--rule)}
+.calc-result p{margin:.55rem 0;max-width:var(--measure);font:400 1.0625rem/1.5 var(--read)}
+.calc-result .spec{margin:10px 0 14px;background:var(--sheet)}
+.calc-result .spec div{padding-left:12px}
+.calc-result .calc-note{font:400 var(--t-label)/1.5 var(--frame);color:var(--ink-2)}
+
 /* ---------- lists of articles: ruled rows, dates tight to the right ---------- */
 .entries{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
 .entries li{display:grid;gap:6px;padding:16px 0 18px;border-bottom:1px solid var(--rule);break-inside:avoid}
@@ -472,6 +504,7 @@ footer.site .small{color:var(--on-plate-2)}
 <section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>How much is EU261 compensation?</summary><p>€250 for flights of 1,500 km or less, €400 for flights within the EU over 1,500 km and other flights of 1,500 to 3,500 km, and €600 for longer flights. For a long-haul flight that arrives 3 to 4 hours late, the European Commission's table gives €300.</p></details><details><summary>How long does a flight have to be delayed for EU261 compensation?</summary><p>3 hours or more at your final destination. The clock runs on arrival, not departure, according to the European Commission's Your Europe page.</p></details><details><summary>Does EU261 cover a flight from outside the EU on a non-EU airline?</summary><p>No. Flying into the EU, the rules apply only if the operating airline is an EU carrier. Citizens Information's example: New York to Dublin on Aer Lingus is covered, on American Airlines it is not.</p></details><details><summary>Can the airline pay me in vouchers?</summary><p>Only if you agree in writing. Article 7(3) says compensation is paid in cash, by bank transfer or cheque, or in vouchers with the passenger's signed agreement.</p></details><details><summary>Is a technical fault an extraordinary circumstance?</summary><p>Usually not. Your Europe lists most technical problems found during maintenance, and strikes by the airline's own staff, as not extraordinary. Germany's LBA cites the EU Court of Justice ruling C-549/07 on the same point.</p></details><details><summary>Do I need a claims company?</summary><p>No. You can claim from the airline yourself, then go to the national enforcement body, an alternative dispute body or a court. Claims agencies are optional.</p></details></section>
 <section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R0261" rel="noopener">Regulation (EC) No 261/2004 on air passenger rights</a>, EUR-Lex (European Union)</li><li><a href="https://europa.eu/youreurope/citizens/travel/passenger-rights/air/index_en.htm" rel="noopener">Air passenger rights</a>, Your Europe (European Commission)</li><li><a href="https://www.citizensinformation.ie/en/travel-and-recreation/air-travel/compensation-for-overbooked-and-delayed-flights/" rel="noopener">Compensation for overbooked, cancelled and delayed flights in the EU</a>, Citizens Information (Ireland)</li><li><a href="https://www.lba.de/DE/Fluggastrechte/FAQFluggastrechte/FAQ_DeniedBoarding/FAQ_node.html" rel="noopener">Fragen &amp; Antworten zu Annullierung, Verspätung und Nichtbeförderung</a>, Luftfahrt-Bundesamt (Germany)</li><li><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/07/13/council-gives-final-clearance-for-stronger-air-passenger-rights/" rel="noopener">Council gives final clearance for stronger air passenger rights</a>, Council of the European Union</li><li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32026R2202" rel="noopener">Regulation (EU) 2026/2202 amending Regulation (EC) No 261/2004</a>, EUR-Lex (Official Journal of the EU, 2.10.2026)</li></ol></section>
 <p class="small how"><a href="/about/">How we write these pages</a></p>
+
 <section class="related"><h2 id="read-next">Read next</h2><ul class="entries"><li><a href="/visas-documents/passport-validity/"><span class="entry-title">Passport validity requirements by country: 7 rules</span><span class="entry-desc">Schengen wants 3 months after you leave and an issue date under 10 years; UAE and India want 6 months; Turkey wants your stay plus 60 days. Sources inside.</span></a><time datetime="2026-11-02">2 November 2026</time></li></ul></section>
 </article><div class="bot-everywhere"><aside class="bot" aria-labelledby="bot-h"><div class="carrier"><div class="punch" aria-hidden="true"><svg class="chip-big" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg></div><div class="bot-text"><h2 id="bot-h">Ask NeedPro</h2>
 <p>Describe your situation in your own words. The bot answers with a checked fact, the official source and the date it was checked.</p>

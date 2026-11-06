@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schengen calculator: count your 90/180 days</title>
+<meta name="description" content="Enter your trips and a date: days used in the 180-day window, days left, your last allowed day and the next full 90 days. EU rule checked 6 Nov 2026.">
+<link rel="canonical" href="https://blog.needpro.app/visas-documents/schengen-calculator/">
+<link rel="alternate" hreflang="en" href="https://blog.needpro.app/visas-documents/schengen-calculator/">
+<link rel="alternate" hreflang="ru" href="https://blog.needpro.app/ru/vizy-i-dokumenty/kalkulyator-shengena/">
+<link rel="alternate" hreflang="x-default" href="https://blog.needpro.app/visas-documents/schengen-calculator/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Schengen calculator: count your 90/180 days">
+<meta property="og:description" content="Enter your trips and a date: days used in the 180-day window, days left, your last allowed day and the next full 90 days. EU rule checked 6 Nov 2026.">
+<meta property="og:url" content="https://blog.needpro.app/visas-documents/schengen-calculator/">
+<meta property="og:site_name" content="NeedPro Guides">
+
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" type="application/rss+xml" title="NeedPro Guides" href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/onest.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script data-goatcounter="https://needproblog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
+<meta name="yandex-verification" content="10e73944ba46752e">
+<style>/* NeedPro Guides — set like the carrier card a SIM is popped out of on arrival.
+   A jade operator plate owns the frame (masthead, section tabs, table heads, footer,
+   the bot card) edge to edge; the reading column is the plain back of the card,
+   with no colour behind the text. The SIM's cut corner is the one shape (chamfered
+   panels and the bot card); punch-out lines are dashed; the gold chip is the mark and
+   the one annotation ink, kept for the check date and the current tab.
+   Onest sets the frame and headings, Literata the reading. Decisions: DESIGN.md. */
+@font-face{font-family:"Onest";src:url(/fonts/onest.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Onest";src:url(/fonts/onest-ext.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Onest";src:url(/fonts/onest-cyr.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Literata";src:url(/fonts/literata.woff2) format("woff2");font-weight:200 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Literata";src:url(/fonts/literata-ext.woff2) format("woff2");font-weight:200 900;font-style:normal;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Literata";src:url(/fonts/literata-cyr.woff2) format("woff2");font-weight:200 900;font-style:normal;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Literata";src:url(/fonts/literata-italic.woff2) format("woff2");font-weight:200 900;font-style:italic;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Literata";src:url(/fonts/literata-italic-ext.woff2) format("woff2");font-weight:200 900;font-style:italic;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Literata";src:url(/fonts/literata-italic-cyr.woff2) format("woff2");font-weight:200 900;font-style:italic;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+
+:root{
+  /* Carrier plastic. Plain hex, not color-mix(): the contrast test reads computed colours. */
+  --plate:#0b6b4f;         /* the operator field; white on it 6.5:1 */
+  --plate-deep:#074633;    /* footer, tabs, pressed; white on it 11:1 */
+  --on-plate:#ffffff;
+  --on-plate-2:#cfe9de;    /* secondary text on the plate, 5:1 on --plate */
+  --chip:#d9b23a;          /* the gold chip: marks and rules only, never text */
+  --chip-line:#7a5d10;     /* the contact cuts drawn on the chip */
+  /* Day: the white back of the card on cool grey-green, never cream. */
+  --ground:#eef2f0;--sheet:#ffffff;--ink:#101a16;--ink-2:#4a5852;--rule:#cdd7d2;
+  --link:#0b6b4f;--accent:#0b6b4f;--underline:#86b9a4;--tint:#f2f6f4;--mark:#f4e3a2;
+  --frame:"Onest","Segoe UI","Noto Sans",system-ui,sans-serif;
+  --read:"Literata","Iowan Old Style","Noto Serif",Georgia,serif;
+  /* One scale: display, title, section, sub, body, label. */
+  --t-display:clamp(2.125rem,1.4rem + 3.6vw,4rem);
+  --t-title:clamp(1.875rem,1.35rem + 2.3vw,3rem);
+  --t-sec:clamp(1.375rem,1.2rem + .7vw,1.625rem);--t-sub:1.1875rem;--t-body:1.125rem;--t-label:.875rem;
+  --measure:40rem;--page:74rem;--gap:clamp(16px,4vw,40px);
+  --cut:14px;               /* the SIM's cut corner on panels */
+  --ease:cubic-bezier(.2,.8,.2,1);
+  color-scheme:light dark;
+}
+/* Night: the same card in a dark room. The plate keeps its plastic. */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;
+  --ground:#060c0a;--sheet:#111d19;--ink:#e4ece8;--ink-2:#a5b5ae;--rule:#2b3e37;
+  --link:#7ad6b1;--accent:#7ad6b1;--underline:#3f7d65;--tint:#172822;--mark:#5c4a10;--plate-deep:#06382a;
+}}
+:root[data-theme=dark]{color-scheme:dark;
+  --ground:#060c0a;--sheet:#111d19;--ink:#e4ece8;--ink-2:#a5b5ae;--rule:#2b3e37;
+  --link:#7ad6b1;--accent:#7ad6b1;--underline:#3f7d65;--tint:#172822;--mark:#5c4a10;--plate-deep:#06382a;
+}
+:root[data-theme=light]{color-scheme:light}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scrollbar-color:var(--accent) var(--ground);accent-color:var(--plate);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 var(--t-body)/1.65 var(--read);overflow-wrap:break-word;caret-color:var(--accent);font-kerning:normal}
+::selection{background:var(--mark);color:var(--ink)}
+a{color:var(--link);text-decoration-line:underline;text-decoration-color:var(--underline);text-decoration-thickness:.09em;text-underline-offset:.2em}
+a:hover{text-decoration-color:currentColor;text-decoration-thickness:.12em}
+:focus-visible{outline:3px solid currentColor;outline-offset:3px;border-radius:2px}
+img{max-width:100%;height:auto;display:block}
+picture{display:block;min-width:0}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--sheet);color:var(--ink);padding:8px 12px;z-index:9}
+
+/* the chip: gold body, contact cuts in dark gold */
+.chip-body{fill:var(--chip)}
+.chip-lines{fill:none;stroke:var(--chip-line);stroke-width:1.3;stroke-linecap:round}
+
+/* ---------- the masthead plate ---------- */
+header.site{background:var(--plate);color:var(--on-plate)}
+.band{max-width:var(--page);margin:0 auto;padding:0 var(--gap)}
+header.site a{color:var(--on-plate);text-decoration-color:var(--on-plate-2)}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px;padding:8px 0}
+.brand{display:inline-flex;align-items:center;gap:10px;min-height:44px;margin-right:auto;font:700 1.0625rem/1.1 var(--frame);letter-spacing:-.01em;text-decoration:none}
+.brand:hover{text-decoration:underline}
+.chip{width:26px;height:26px;flex:none}
+.about{display:inline-flex;align-items:center;min-height:44px;font:550 var(--t-label)/1 var(--frame);text-decoration:none;padding:0 2px}
+.about:hover,.about[aria-current]{text-decoration:underline;text-decoration-thickness:2px}
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+/* Switches are SIM trays: a deep track, and the setting in use is the punched white slot. */
+.langs,.theme{display:inline-grid;grid-auto-flow:column;grid-auto-columns:1fr;align-items:stretch;min-height:44px;padding:4px;gap:0;border-radius:10px;background:var(--plate-deep)}
+.langs a,.lang-here,.theme span{display:flex;align-items:center;justify-content:center;padding:0 12px;border-radius:7px;font:600 .8125rem/1 var(--frame);text-decoration:none;color:var(--on-plate);background:transparent;transition:background-color .18s var(--ease),color .18s var(--ease)}
+.lang-here{background:var(--on-plate);color:var(--plate-deep)}
+.langs a:hover{text-decoration:underline}
+.theme{cursor:pointer;margin:0;border:0;font:inherit;color:var(--on-plate)}
+.theme[aria-pressed=false] .theme-day,.theme[aria-pressed=true] .theme-night{background:var(--on-plate);color:var(--plate-deep)}
+.theme:hover span{text-decoration:underline}
+.theme[aria-pressed=false] .theme-day,.theme[aria-pressed=true] .theme-night{text-decoration:none}
+@media (max-width:639px){
+  .controls{flex-basis:100%;justify-content:space-between}
+}
+@media (max-width:379px){
+  .top{column-gap:10px}
+  .brand{font-size:1rem;gap:8px}.chip{width:22px;height:22px}
+  .controls{gap:8px}
+  .langs a,.lang-here,.theme span{padding:0 8px}
+}
+
+/* the plate's title on home, sections, about and 404 */
+.running{padding:clamp(14px,3vw,34px) 0 clamp(22px,3.5vw,40px)}
+.running h1,.running-name{margin:0;font:750 var(--t-display)/1.02 var(--frame);letter-spacing:-.03em;text-wrap:balance;max-width:16ch;color:var(--on-plate)}
+.running-name{font-size:var(--t-sec);font-weight:650;letter-spacing:-.01em;max-width:none}
+.running-name a{text-decoration:none}
+.running-name a:hover{text-decoration:underline}
+.running .lead{margin:.75em 0 0;max-width:36rem;font:400 1.1875rem/1.5 var(--read);color:var(--on-plate-2);text-wrap:pretty}
+
+/* section tabs on the plate's lower edge; the current one is punched through to the ground */
+.tabs{padding-bottom:0}
+.tabs-row,.tabs-list{display:flex;flex-wrap:wrap;gap:4px}
+.tabs a,.tabs summary{display:flex;align-items:center;min-height:44px;padding:0 13px;font:600 .875rem/1.15 var(--frame);text-decoration:none;color:var(--on-plate);background:var(--plate-deep);border-radius:8px 8px 0 0}
+.tabs a:hover{text-decoration:underline}
+.tabs a[aria-current]{background:var(--ground);color:var(--ink);box-shadow:inset 0 3px 0 var(--chip)}
+.tabs-row{display:none}
+.tabs summary{list-style:none;cursor:pointer;gap:8px;width:max-content}
+.tabs summary::-webkit-details-marker{display:none}
+.tabs-phone[open] summary{border-radius:8px 8px 0 0}
+.tabs-phone .tabs-list{padding:4px 0 8px}
+.tabs-phone .tabs-list a{border-radius:8px}
+.tabs .count{font-variant-numeric:tabular-nums;color:var(--on-plate-2)}
+@media (min-width:900px){.tabs-row{display:flex}.tabs-phone{display:none}}
+
+.crumbs{max-width:var(--page);margin:0 auto;padding:18px var(--gap) 0;font:450 var(--t-label)/1.45 var(--frame);color:var(--ink-2)}
+.crumbs a{color:var(--ink-2)}
+.crumbs [aria-current]{color:var(--ink)}
+
+main{padding:0 0 64px}
+.sheet{max-width:var(--page);margin:18px auto 0;padding:clamp(4px,1.5vw,16px) var(--gap) clamp(28px,4vw,48px);background:var(--sheet)}
+/* the white back of the card: on wide screens it floats on the ground with the SIM's cut corner */
+@media (min-width:1240px){.sheet{border-radius:16px;clip-path:polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,0 100%)}}
+.home.sheet,.hub.sheet{padding-top:clamp(8px,2vw,20px)}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:var(--frame);color:var(--ink);text-wrap:balance;hyphens:manual}
+h1{font-size:var(--t-title);line-height:1.08;font-weight:750;letter-spacing:-.025em;margin:.45em 0 .55em;max-width:20ch}
+h2{max-width:var(--measure);font-size:var(--t-sec);line-height:1.2;font-weight:700;letter-spacing:-.015em;margin:2.1em 0 .5em}
+h3{font-size:var(--t-sub);line-height:1.3;font-weight:650;margin:1.7em 0 .35em}
+.small{font:400 var(--t-label)/1.5 var(--frame);color:var(--ink-2)}
+
+/* the serial band: published, checked, reading, sources, printed like the numbers on a carrier */
+.spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 28px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:var(--measure)}
+.spec div{padding:8px 12px 9px 0;min-width:0}
+.spec div:nth-child(2n){padding-left:12px;border-left:1px solid var(--rule)}
+.spec div:nth-child(n+3){border-top:1px solid var(--rule)}
+.spec dt{font:450 .8125rem/1.2 var(--frame);color:var(--ink-2)}
+.spec dd{margin:3px 0 0;font:600 .9375rem/1.3 var(--frame);font-variant-numeric:lining-nums tabular-nums}
+.spec dd a{color:var(--ink);text-decoration-color:var(--rule)}
+.spec .checked dd{text-decoration:underline;text-decoration-color:var(--chip);text-decoration-thickness:3px;text-underline-offset:5px}
+@media (min-width:600px){.spec{grid-template-columns:repeat(4,auto);justify-content:start}.spec div:nth-child(n){border-top:0;padding-right:18px}.spec div+div{padding-left:14px;border-left:1px solid var(--rule)}}
+
+/* panels: "In short" is a white card with the SIM's cut corner */
+.panel{position:relative;isolation:isolate;max-width:var(--measure);margin:0 0 12px;background:var(--rule);border-radius:8px;clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,0 100%)}
+/* the outline is the rule-coloured card showing 1px round a white face cut on the same diagonal */
+.panel::before{content:"";position:absolute;inset:1px;z-index:-1;background:var(--tint);border-radius:7px;clip-path:polygon(0 0,calc(100% - var(--cut) + .59px) 0,100% calc(var(--cut) - .59px),100% 100%,0 100%)}
+.panel-head{margin:0;padding:12px 18px 0;font:700 1rem/1.2 var(--frame);letter-spacing:0;max-width:none;color:var(--ink)}
+.panel-body{margin:0;padding:6px 22px 14px 2.4rem}
+.panel-body li{margin:.3rem 0}
+.panel-body li::marker{color:var(--accent)}
+
+/* contents: a ruled list in the margin (wide) or a disclosure (narrow) */
+.contents h2{font:700 .9375rem/1.2 var(--frame);margin:0;padding:0 0 9px;border-bottom:1px solid var(--ink)}
+.contents ol{margin:0;padding:0;list-style:none}
+.contents li{border-bottom:1px solid var(--rule)}
+.contents a{display:block;padding:8px 0;color:var(--ink);text-decoration:none;font:450 .9375rem/1.4 var(--frame)}
+.contents a:hover{text-decoration:underline;text-decoration-color:var(--underline)}
+.contents.narrow{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:var(--measure);margin-bottom:8px}
+.contents.narrow summary{list-style:none;cursor:pointer;min-height:48px;display:flex;align-items:center;gap:10px;font:700 .9375rem/1.2 var(--frame)}
+.contents.narrow summary::-webkit-details-marker{display:none}
+.contents.narrow summary::before,.faq summary::before{content:"";flex:none;width:13px;height:13px;background:linear-gradient(var(--accent),var(--accent)) center/13px 2.5px no-repeat,linear-gradient(var(--accent),var(--accent)) center/2.5px 13px no-repeat;transition:transform .18s var(--ease)}
+.contents.narrow[open] summary::before,.faq details[open] summary::before{transform:rotate(90deg);background:linear-gradient(var(--accent),var(--accent)) center/13px 2.5px no-repeat}
+.contents.narrow .count{font-weight:450;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.contents.narrow ol{padding:4px 0 10px}
+.contents.narrow li:last-child{border-bottom:0}
+
+.layout{display:grid;gap:18px}
+.layout>header{min-width:0}
+.column{min-width:0;max-width:var(--measure)}
+.contents.wide{display:none}
+.margin{min-width:0}
+@media (min-width:1100px){
+  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);grid-template-areas:"head side" "body side";grid-template-rows:auto 1fr;column-gap:64px;row-gap:0}
+  .layout>header{grid-area:head}.column{grid-area:body}
+  .margin{grid-area:side;justify-self:end;width:min(100%,18rem);position:sticky;top:24px;align-self:start;margin-top:2.6rem}
+  .contents.wide{display:block}.contents.narrow{display:none}
+}
+
+.prose{max-width:var(--measure);min-width:0}
+/* the one line that matters: the direct answer opens the article a step larger */
+.prose>p:first-child{font-size:1.3125rem;line-height:1.5;margin-top:1.4rem;padding-bottom:1.1rem;border-bottom:1.5px dashed var(--rule)}
+.prose p,.prose li{hyphens:manual;text-wrap:pretty}
+/* Hyphenate only where the measure is short: a phone column of ~35 characters. */
+@media (max-width:479px){.prose p,.prose li{hyphens:auto}.prose>p:first-child{font-size:1.1875rem}}
+.prose ul,.prose ol{padding-left:1.4rem}
+.prose li{margin:.35rem 0}
+.prose ul li::marker{color:var(--accent)}
+.prose ol li::marker{color:var(--ink-2);font:600 .9375em var(--frame);font-variant-numeric:tabular-nums}
+.prose blockquote{margin:1.6rem 0;padding:.7rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-style:italic;color:var(--ink-2)}
+.prose strong{font-weight:650}
+.prose em{font-style:italic}
+.prose code{font:500 .88em/1 ui-monospace,"SF Mono",Menlo,Consolas,monospace;background:var(--tint);border:1px solid var(--rule);padding:.05em .3em;border-radius:4px}
+.prose hr{border:0;border-top:1px dashed var(--rule);margin:2.4rem 0}
+.prose mark{background:var(--mark);color:var(--ink);padding:0 .1em}
+
+/* tables: the head is a strip of the plate, figures in line */
+.table-wrap{overflow-x:auto;margin:1.6rem 0;-webkit-overflow-scrolling:touch;max-width:100%;border-radius:8px 8px 0 0}
+table{border-collapse:collapse;width:100%;font:400 .9375rem/1.45 var(--frame);font-variant-numeric:lining-nums tabular-nums;background:var(--sheet)}
+th,td{text-align:left;vertical-align:top;padding:9px 14px;border-bottom:1px solid var(--rule)}
+th{font-weight:650;background:var(--plate);color:var(--on-plate)}
+tbody tr:nth-child(even) td{background:var(--tint)}
+td{background:var(--sheet)}
+
+.button{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;margin:4px 0;background:var(--plate);color:var(--on-plate);font:650 1rem/1 var(--frame);text-decoration:none;border:0;border-radius:10px;white-space:nowrap}
+.button:visited{color:var(--on-plate)}
+.button:hover{background:var(--plate-deep);text-decoration:underline;text-decoration-color:var(--on-plate-2)}
+
+/* questions: a drawn plus that turns to a minus */
+.faq details{border-bottom:1px solid var(--rule);max-width:var(--measure)}
+.faq details:first-of-type{border-top:1px solid var(--ink)}
+.faq summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;min-height:52px;padding:8px 0;font:600 1.0625rem/1.35 var(--frame)}
+.faq summary::-webkit-details-marker{display:none}
+.faq details p{margin:0 0 16px 27px}
+.sources ol{font-size:1rem;line-height:1.5;padding-left:1.5rem;max-width:var(--measure)}
+.sources li{margin:.45rem 0}
+.sources li::marker{font:600 .875rem var(--frame);font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.how{max-width:var(--measure);margin-top:2.4rem}
+
+/* ---------- the calculator on a tool page: a tray cut like the SIM, fields as punched slots ---------- */
+.calc{position:relative;margin:2rem 0 2.4rem;padding:4px clamp(14px,3vw,24px) 20px;background:var(--tint);border-top:1px solid var(--ink);border-radius:0 0 8px 8px;clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,0 100%);font:400 1rem/1.5 var(--frame)}
+.calc h2{margin:.9em 0 .4em}
+.calc [hidden]{display:none!important}
+.calc p{hyphens:manual}
+.calc fieldset{margin:0;padding:0;border:0;min-width:0}
+.calc legend{padding:0;font:700 1.0625rem/1.3 var(--frame);color:var(--ink)}
+.calc-hint{margin:.25rem 0 .6rem;font:400 var(--t-label)/1.45 var(--frame);color:var(--ink-2);max-width:var(--measure)}
+.calc-rows{list-style:none;margin:0;padding:0}
+.calc-row{position:relative;padding:12px 0;border-bottom:1px dashed var(--rule)}
+.calc-row .calc-remove{position:absolute;top:2px;right:0;margin:0}
+.calc-row:first-child{border-top:1px dashed var(--rule)}
+.calc-row legend{font:650 .9375rem/1.3 var(--frame);color:var(--ink-2);margin-bottom:6px}
+.calc-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:4px 16px}
+.calc-field{min-width:0;margin:6px 0}
+.calc-field label{display:block;margin-bottom:4px;font:600 .9375rem/1.3 var(--frame);color:var(--ink)}
+.calc input{display:block;width:100%;min-width:0;max-width:16rem;min-height:44px;padding:6px 10px;font:500 1rem/1.2 var(--frame);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--sheet);border:1px solid var(--ink-2);border-radius:7px}
+.calc input[aria-invalid=true]{border:2px solid var(--ink);box-shadow:inset 0 -3px 0 var(--chip)}
+.calc-error{margin:.3rem 0 0;font:600 var(--t-label)/1.4 var(--frame);color:var(--ink)}
+.calc-error::before{content:"";display:inline-block;width:.55em;height:.55em;margin-right:.45em;background:var(--chip);border:1px solid var(--chip-line);transform:rotate(45deg) translateY(-.1em)}
+.calc-check,.calc-plan{margin-top:18px}
+.calc-add,.calc-remove,.calc-reset{display:inline-flex;align-items:center;min-height:44px;margin:8px 0 0;padding:0 14px;font:600 .9375rem/1 var(--frame);color:var(--link);background:transparent;border:1px solid var(--link);border-radius:10px;cursor:pointer}
+.calc-remove,.calc-reset{border-color:transparent;padding:0 4px;text-decoration:underline;text-decoration-color:var(--underline);text-underline-offset:.2em}
+.calc-add:hover,.calc-remove:hover,.calc-reset:hover{text-decoration:underline;text-decoration-color:currentColor}
+.calc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:20px}
+.calc-actions .button{cursor:pointer}
+.calc-result:not(:empty){margin-top:22px;padding-top:6px;border-top:1.5px dashed var(--rule)}
+.calc-result p{margin:.55rem 0;max-width:var(--measure);font:400 1.0625rem/1.5 var(--read)}
+.calc-result .spec{margin:10px 0 14px;background:var(--sheet)}
+.calc-result .spec div{padding-left:12px}
+.calc-result .calc-note{font:400 var(--t-label)/1.5 var(--frame);color:var(--ink-2)}
+
+/* ---------- lists of articles: ruled rows, dates tight to the right ---------- */
+.entries{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
+.entries li{display:grid;gap:6px;padding:16px 0 18px;border-bottom:1px solid var(--rule);break-inside:avoid}
+.entries a{text-decoration:none;color:var(--ink);display:block;min-width:0}
+.entry-title{display:block;font:650 var(--t-sub)/1.28 var(--frame);letter-spacing:-.008em;text-wrap:balance}
+.entries a:hover .entry-title{text-decoration:underline;text-decoration-color:var(--underline);text-decoration-thickness:3px;text-underline-offset:.2em}
+.entry-desc{display:block;color:var(--ink-2);font-size:1rem;line-height:1.5;margin-top:5px;text-wrap:pretty}
+.entries time{font:450 .8125rem/1.3 var(--frame);color:var(--ink-2);font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+@media (min-width:640px){
+  .entries li{grid-template-columns:minmax(0,1fr) auto;column-gap:28px;align-items:baseline}
+  .entries time{grid-column:2;grid-row:1;text-align:right}
+}
+.empty{color:var(--ink-2);max-width:var(--measure);margin:2rem 0 1.2rem;font-size:1.0625rem}
+
+/* home: sections as ruled groups, a name in the margin and its newest articles beside it */
+.home .index-head{max-width:var(--measure);margin:2rem 0 .4rem;font-size:var(--t-sub);font-weight:650}
+.dept{padding:18px 0 26px}
+.dept h3{margin:0 0 10px;font-size:var(--t-sec);font-weight:700;letter-spacing:-.015em}
+.dept h3 a{color:var(--ink);text-decoration:none}
+.dept h3 a:hover{text-decoration:underline;text-decoration-color:var(--underline)}
+@media (min-width:1000px){
+  .dept{display:grid;grid-template-columns:minmax(0,16rem) minmax(0,var(--measure));column-gap:48px;border-top:1px solid var(--rule)}
+  .dept h3{margin:16px 0 0}
+  .dept .entries{border-top:0}
+}
+.entries.flat li:first-child{padding:22px 0 24px}
+.entries.flat li:first-child .entry-title{font-size:var(--t-sec);font-weight:750;letter-spacing:-.018em;line-height:1.2}
+.more{margin:.7rem 0 0;font:600 .9375rem/1.4 var(--frame)}
+.hub .start{margin-top:2.2rem}
+.hub .start .entry-title{font-size:var(--t-sec)}
+
+/* ---------- the bot: a SIM carrier card that closes every page ---------- */
+.bot-everywhere{max-width:var(--page);margin:56px auto 0;padding:0 var(--gap)}
+.bot{max-width:var(--measure);margin:48px 0}
+.bot-everywhere .bot{margin:0}
+/* the card's cut corner, top right, as on a SIM */
+.carrier{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:start;background:var(--plate);color:var(--on-plate);border-radius:16px;padding:24px 34px 22px 26px;clip-path:polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,0 100%)}
+/* the punch-out: a dashed outline round the chip, as on the card the SIM pops out of */
+.punch{display:grid;place-items:center;width:84px;height:64px;border:1.5px dashed var(--on-plate-2);border-radius:12px 4px 12px 12px}
+.chip-big{width:48px;height:48px}
+.bot h2{margin:0 0 .35em;font-size:var(--t-sec);font-weight:700;letter-spacing:-.015em;color:var(--on-plate);max-width:none}
+.bot p{margin:.4em 0;max-width:34rem}
+.bot p:not(.small){font-size:1.0625rem;line-height:1.55}
+.bot .small{color:var(--on-plate-2)}
+.bot .button{margin-top:8px;background:var(--on-plate);color:var(--plate-deep)}
+.bot .button:visited{color:var(--plate-deep)}
+.bot .button:hover{background:var(--on-plate-2);text-decoration-color:var(--plate-deep)}
+.bot a:not(.button){color:var(--on-plate)}
+@media (max-width:479px){
+  .carrier{grid-template-columns:minmax(0,1fr);gap:16px;padding:20px 18px 18px}
+  .punch{width:70px;height:54px}.chip-big{width:40px;height:40px}
+}
+
+/* ---------- the footer plate ---------- */
+footer.site{background:var(--plate-deep);color:var(--on-plate-2);font:400 .9375rem/1.55 var(--frame)}
+footer.site .bar{max-width:var(--page);margin:0 auto;padding:24px var(--gap) 32px}
+footer.site p{margin:.4rem 0;max-width:var(--measure)}
+footer.site p:first-child{color:var(--on-plate);font-weight:550}
+footer.site a{color:var(--on-plate);text-decoration-color:var(--on-plate-2)}
+footer.site .small{color:var(--on-plate-2)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{header.site .tabs,header.site .top,.button,.margin,.theme,.bot-everywhere{display:none}footer.site,footer.site p,footer.site .small,footer.site a{background:none;color:#000}.sheet{clip-path:none}header.site{background:none;color:#000}.running h1,.running-name,.running-name a,.running .lead{color:#000}body{background:#fff;color:#000}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://blog.needpro.app/#website","url":"https://blog.needpro.app/","name":"NeedPro Guides","inLanguage":"en","publisher":{"@id":"https://blog.needpro.app/#org"}},{"@type":"Organization","@id":"https://blog.needpro.app/#org","name":"NeedPro Guides","url":"https://blog.needpro.app/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://blog.needpro.app/"},{"@type":"ListItem","position":2,"name":"Visas & documents","item":"https://blog.needpro.app/visas-documents/"},{"@type":"ListItem","position":3,"name":"Schengen calculator: count your 90/180 days"}]},{"@type":"WebPage","@id":"https://blog.needpro.app/visas-documents/schengen-calculator/#article","headline":"Schengen calculator: count your 90/180 days","description":"Enter your trips and a date: days used in the 180-day window, days left, your last allowed day and the next full 90 days. EU rule checked 6 Nov 2026.","inLanguage":"en","url":"https://blog.needpro.app/visas-documents/schengen-calculator/","mainEntityOfPage":"https://blog.needpro.app/visas-documents/schengen-calculator/","datePublished":"2026-11-06","dateModified":"2026-11-06","lastReviewed":"2026-11-06","author":{"@id":"https://blog.needpro.app/#org"},"publisher":{"@id":"https://blog.needpro.app/#org"},"citation":["https://home-affairs.ec.europa.eu/policies/schengen/border-crossing/short-stay-calculator_en","https://ec.europa.eu/assets/home/visa-calculator-2/docs/short_stay_schengen_calculator_user_manual_en.pdf","https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02016R0399-20251012","https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en","https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do the day of arrival and the day of departure count?","acceptedAnswer":{"@type":"Answer","text":"Yes. Article 6(2) of the Schengen Borders Code says the date of entry is the first day of stay and the date of exit is the last. A trip from Monday to Friday is 5 days, and a same-day visit is 1."}},{"@type":"Question","name":"Does the 180-day period start on my first entry?","acceptedAnswer":{"@type":"Answer","text":"No. The period moves: on each day of your stay you look back 180 days from that day. The old rule of 3 months in the 6 months after first entry is gone, except for ordinary Brazilian passports, where the EU manual says the old wording still applies under the EU–Brazil agreement."}},{"@type":"Question","name":"How long do I have to stay out to get 90 days again?","acceptedAnswer":{"@type":"Answer","text":"The EU user manual says an absence of 90 days in a row always allows a new stay of up to 90 days. You can often come back sooner for a shorter trip; the calculator shows the earliest date for the trip length you enter."}},{"@type":"Question","name":"Do days in Ireland, Cyprus or the UK count towards the 90?","acceptedAnswer":{"@type":"Answer","text":"No. Ireland and Cyprus are in the EU but not in the Schengen area for this rule, and the UK is outside the EU. Iceland, Liechtenstein, Norway and Switzerland are outside the EU but inside Schengen, so their days do count."}},{"@type":"Question","name":"Can I stay longer than 90 days with a visa-free passport?","acceptedAnswer":{"@type":"Answer","text":"Only under a separate permission. Some Schengen countries still apply old bilateral visa waiver agreements that allow extra time in that one country, and a long-stay visa or residence permit lets you stay longer. The calculator cannot see either; ask the consulate of that country."}}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="band">
+<div class="top"><a class="brand" href="/"><svg class="chip" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg>NeedPro Guides</a><a class="about" href="/about/">About</a><div class="controls"><nav class="langs" aria-label="Language"><span class="lang-here" lang="en" aria-current="true">English</span><a class="lang" href="/ru/vizy-i-dokumenty/kalkulyator-shengena/" hreflang="ru" lang="ru" data-goatcounter-click="lang-ru">Русский</a></nav><button class="theme" type="button" hidden aria-label="Night pages" aria-pressed="false"><span class="theme-day" aria-hidden="true">Day</span><span class="theme-night" aria-hidden="true">Night</span></button></div></div>
+<div class="running"><p class="running-name"><a href="/visas-documents/">Visas &amp; documents</a></p></div>
+<nav class="tabs" aria-label="Sections"><div class="tabs-row"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/work-freelance/">Work &amp; freelance</a></div><details class="tabs-phone"><summary>All sections <span class="count">6</span></summary><div class="tabs-list"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/work-freelance/">Work &amp; freelance</a></div></details></nav></div></header>
+<script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/visas-documents/">Visas &amp; documents</a> <span aria-hidden="true">›</span> <span aria-current="page">Schengen calculator: count your 90/180 days</span></nav>
+<main id="main"><article class="sheet article"><div class="layout">
+<header><h1>Schengen calculator: count your 90/180 days</h1>
+<dl class="spec">
+<div><dt>Published</dt><dd><time datetime="2026-11-06">6 November 2026</time></dd></div>
+<div class="checked"><dt>Checked</dt><dd><time datetime="2026-11-06">6 November 2026</time></dd></div>
+<div><dt>Reading</dt><dd>5 min</dd></div>
+<div><dt>Sources</dt><dd><a href="#sources">5 named</a></dd></div>
+</dl></header>
+<div class="margin"><nav class="contents wide" aria-labelledby="contents-h"><h2 id="contents-h">In this article</h2><ol><li><a href="#how-the-90-180-rule-works">How the 90/180 rule works</a></li><li><a href="#a-worked-example-from-the-eu-manual">A worked example from the EU manual</a></li><li><a href="#which-countries-count-the-schengen-area-on-6-november-2026">Which countries count: the Schengen area on 6 November 2026</a></li><li><a href="#when-the-calculator-s-answer-is-not-your-answer">When the calculator&amp;#39;s answer is not your answer</a></li><li><a href="#how-to-fill-in-the-calculator">How to fill in the calculator</a></li><li><a href="#the-border-guard-decides">The border guard decides</a></li></ol></nav><details class="contents narrow"><summary>In this article <span class="count">6 sections</span></summary><ol><li><a href="#how-the-90-180-rule-works">How the 90/180 rule works</a></li><li><a href="#a-worked-example-from-the-eu-manual">A worked example from the EU manual</a></li><li><a href="#which-countries-count-the-schengen-area-on-6-november-2026">Which countries count: the Schengen area on 6 November 2026</a></li><li><a href="#when-the-calculator-s-answer-is-not-your-answer">When the calculator&amp;#39;s answer is not your answer</a></li><li><a href="#how-to-fill-in-the-calculator">How to fill in the calculator</a></li><li><a href="#the-border-guard-decides">The border guard decides</a></li></ol></details></div>
+<div class="column"><section class="panel short" aria-labelledby="short-h"><h2 id="short-h" class="panel-head">In short</h2><ul class="panel-body"><li>On any day, count back 180 days including that day. The days you spent in the Schengen area in that stretch must add up to 90 or fewer.</li><li>The day you arrive and the day you leave both count as full days, even if you were there for an hour.</li><li>The count covers all 29 Schengen countries together. Days in Ireland, Cyprus and the UK do not count.</li><li>Days on a long-stay (D) visa or a residence permit are not counted. A visa sticker can allow fewer than 90 days, and then the sticker wins.</li><li>The calculator is an estimate. The border guard decides how long you may stay.</li></ul></section><div class="prose"><p>On any day in the Schengen area, look back 180 days including that day: the days you spent inside must add up to no more than 90. The day you arrive and the day you leave both count. Enter your trips below to see the days used, the days left and the last day you can stay. The rule is quoted from Regulation (EU) 2016/399, read on 6 November 2026.</p>
+<section class="calc" aria-labelledby="calc-h">
+<h2 id="calc-h">Count your days</h2>
+<noscript><p class="calc-hint">The calculator needs JavaScript. Without it, use the rule and the worked example below: count back 180 days from the date you are checking and add up your days inside.</p></noscript>
+<form class="calc-form" id="calc-form" hidden novalidate data-limit="90" data-window="180" data-locale="en-GB">
+<fieldset class="calc-stays"><legend>Your stays in the Schengen area</legend>
+<p class="calc-hint" id="calc-stays-hint">One row per trip, from your tickets, boarding passes or passport stamps. Order does not matter, overlaps are counted once.</p>
+<ol class="calc-rows" id="calc-rows"></ol>
+<button type="button" class="calc-add" id="calc-add">Add a stay</button>
+</fieldset>
+<div class="calc-field calc-check"><label for="calc-check">Check date</label><input type="date" id="calc-check" name="check" aria-describedby="calc-check-hint"><p class="calc-hint" id="calc-check-hint">The day to count back from. Today by default.</p></div>
+<fieldset class="calc-plan"><legend>Next trip (optional)</legend>
+<p class="calc-hint" id="calc-plan-hint">Fill in the entry date to see how long you could stay, and a length to see whether that trip fits.</p>
+<div class="calc-pair">
+<div class="calc-field"><label for="calc-plan-entry">Planned entry date</label><input type="date" id="calc-plan-entry" name="plannedEntry" aria-describedby="calc-plan-hint"></div>
+<div class="calc-field"><label for="calc-plan-length">Trip length in days</label><input type="number" id="calc-plan-length" name="plannedLength" inputmode="numeric" min="1" max="90" step="1" aria-describedby="calc-plan-hint"></div>
+</div></fieldset>
+<div class="calc-actions"><button type="submit" class="button">Calculate</button><button type="reset" class="calc-reset">Start again</button></div>
+</form>
+<template id="calc-row"><li class="calc-row"><fieldset><legend class="calc-row-n"></legend>
+<div class="calc-pair"><div class="calc-field"><label data-for="entry">Entry date</label><input type="date" name="entry"></div>
+<div class="calc-field"><label data-for="exit">Exit date</label><input type="date" name="exit"></div></div>
+<button type="button" class="calc-remove">Remove</button></fieldset></li></template>
+<div class="calc-result" id="calc-result" role="status" aria-live="polite" aria-atomic="true"></div>
+<script type="application/json" id="calc-words">{"heading":"Count your days","noscript":"The calculator needs JavaScript. Without it, use the rule and the worked example below: count back 180 days from the date you are checking and add up your days inside.","stays_legend":"Your stays in the Schengen area","stays_hint":"One row per trip, from your tickets, boarding passes or passport stamps. Order does not matter, overlaps are counted once.","stay_n":"Stay {n}","entry":"Entry date","exit":"Exit date","exit_hint":"Leave empty if you are still there.","remove":"Remove","remove_label":"Remove stay {n}","add":"Add a stay","check_label":"Check date","check_hint":"The day to count back from. Today by default.","plan_legend":"Next trip (optional)","plan_hint":"Fill in the entry date to see how long you could stay, and a length to see whether that trip fits.","plan_entry":"Planned entry date","plan_length":"Trip length in days","calculate":"Calculate","reset":"Start again","days":{"one":"{n} day","other":"{n} days"},"lbl_used":"Days used","lbl_left":"Days left","lbl_window":"180-day window","used_of":"{used} of {limit}","r_empty":"No stays entered: on {check} you have the full {limit}.","r_overstay":"The count goes over {limit} days from {from} to {to} ({days} over the limit). On those days the stay breaks the 90/180 rule.","r_until":"If you stay without leaving, your last day inside the rule is {date}.","r_until_none":"On {check} you are already over the limit.","r_full":"The first day a full stay of {limit} can begin: {date}.","r_plan_max":"Entering on {entry}, you can stay up to {n}: the last day is {last}.","r_plan_none":"On {entry} you have no days left to enter with.","r_plan_fits":"A trip of {len} from {entry} fits the rule.","r_plan_earliest":"A trip of {len} from {entry} does not fit. The earliest entry date for it is {date}.","r_plan_never":"A trip of {len} does not fit within the next 180 days of your list. Check the later stays you entered.","r_plan_toolong":"No single short stay can be longer than {limit}.","r_note":"An estimate under the 90/180 rule. A visa sticker with fewer days, a bilateral agreement, a long-stay visa or a residence permit changes the answer, and the border guard decides.","e_summary":"Some fields need fixing. They are marked below.","e_entry_missing":"Enter the entry date of this stay.","e_exit_invalid":"This is not a full date.","e_exit_before":"The exit date is before the entry date.","e_open_after_check":"This stay starts after the check date, so it needs an exit date.","e_check_invalid":"Enter the date to check.","e_planned_invalid":"This is not a full date.","e_length_invalid":"Enter a whole number of days, 1 or more."}</script>
+</section>
+
+<h2 id="how-the-90-180-rule-works">How the 90/180 rule works</h2>
+<p>Article 6(1) of the Schengen Borders Code allows a stay of &quot;no more than 90 days in any 180-day period, which entails considering the 180-day period preceding each day of stay&quot;. In plain terms the window moves. It is not a calendar half-year and it does not start on your first entry. Every day you are in Schengen, a border guard can take that day, look back over it and the 179 days before it, and count.</p>
+<p>Three things follow from the text:</p>
+<ul>
+<li>Article 6(2) makes the day of entry the first day of stay and the day of exit the last. Land at 23:50 and leave at 00:10, and that is 2 days.</li>
+<li>The count is for the whole area at once. Ten days in Spain and twenty in Germany are 30 days, not two separate allowances.</li>
+<li>Days spent on a residence permit or a long-stay visa are not counted. If you lived in a Schengen country on a national <a href="/work-freelance/digital-nomad-visa/">digital nomad visa</a> and then travelled as a tourist, only the tourist days go into the calculator.</li>
+</ul>
+<p>The European Commission&#39;s own calculator does the same count, and its user manual adds one handy fact: 90 days in a row outside the area always gives you a fresh 90.</p>
+<h2 id="a-worked-example-from-the-eu-manual">A worked example from the EU manual</h2>
+<p>The manual, which we opened on 6 November 2026, follows a visa holder through 2024. The stays were 1–10 January (10 days), 1–30 March (30 days) and 1 May – 9 June (40 days). That is 80 days. Here is what the person could do next, by the date of entry:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Entry date</th>
+<th>Longest stay that fits</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>19 June 2024</td>
+<td>20 days</td>
+<td>10 days are left, and the January days drop out of the window one by one from 29 June</td>
+</tr>
+<tr>
+<td>7 August 2024</td>
+<td>20 days, leave by 26 August</td>
+<td>January is out, March is still in until 27 August</td>
+</tr>
+<tr>
+<td>8 August 2024</td>
+<td>50 days</td>
+<td>March drops out day by day from 28 August, so each new day inside replaces an old one</td>
+</tr>
+<tr>
+<td>8 September 2024</td>
+<td>90 days</td>
+<td>90 days in a row outside since 10 June</td>
+</tr>
+</tbody></table>
+</div><p>The calculator above gives these same answers. We run them as an automatic test, so a change that breaks the count is caught before the page is published. A second example in the manual, a visa-free traveller who came for one day on 1 January 2024 and returned on 1 June, reaches 90 days on 29 August 2024: that was the last allowed day, and staying on until 20 September was an overstay.</p>
+<h2 id="which-countries-count-the-schengen-area-on-6-november-2026">Which countries count: the Schengen area on 6 November 2026</h2>
+<p>The EU&#39;s Your Europe page and the Commission&#39;s Schengen page, both read on 6 November 2026, list 29 countries. Bulgaria and Romania were the last to join, on 1 January 2025, so days there count from that date.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Countries</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>25 EU countries</td>
+<td>Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden</td>
+</tr>
+<tr>
+<td>4 non-EU countries</td>
+<td>Iceland, Liechtenstein, Norway, Switzerland</td>
+</tr>
+<tr>
+<td>Not counted</td>
+<td>Cyprus and Ireland (EU, but outside the Schengen rules), the United Kingdom</td>
+</tr>
+</tbody></table>
+</div><p>The Commission says Cyprus is still being brought into the area and Ireland has an opt-out. Ireland and the UK have their own entry rules; for the UK see what a <a href="/visas-documents/uk-eta-cost/">UK ETA costs and covers</a>.</p>
+<h2 id="when-the-calculator-s-answer-is-not-your-answer">When the calculator&#39;s answer is not your answer</h2>
+<p>The count is the general rule. Four cases change it, and the EU manual names each of them:</p>
+<ol>
+<li>Your visa sticker allows fewer than 90 days. Then the sticker is the limit, and the stay must also fit within the visa&#39;s validity dates. The Commission&#39;s calculator page says not to use the calculator in that case.</li>
+<li>Your country has an old bilateral visa waiver agreement with one Schengen state. Under Article 20(2) of the Schengen Convention some states let, for example, Canadian, New Zealand or US citizens stay extra time in that state on top of the 90 days. Whether a state still applies it is up to that state; no calculator can know.</li>
+<li>You hold an ordinary Brazilian passport. The EU–Brazil agreement keeps the old wording, three months during six months from the first entry, so the manual does not recommend the calculator.</li>
+<li>You hold a long-stay visa or a residence permit. Those days are outside the count altogether.</li>
+</ol>
+<p>Your passport has its own deadline as well: for a short stay it must be valid at least 3 months after the day you plan to leave. Our page on <a href="/visas-documents/passport-validity/">passport validity rules by country</a> has the details.</p>
+<h2 id="how-to-fill-in-the-calculator">How to fill in the calculator</h2>
+<ol>
+<li>Take the dates from your passport stamps, tickets or boarding passes. Put each trip in its own row.</li>
+<li>If you are inside the area right now, leave the exit date of the last stay empty. The calculator treats it as running to the check date.</li>
+<li>Set the check date. It is today unless you change it, and you can move it to any past or future day.</li>
+<li>For a trip you are planning, add its entry date and, if you know it, its length. You get the longest stay from that date and, if your trip does not fit, the first date when it would.</li>
+</ol>
+<p>Nothing you type leaves your browser: the page has no account, no form sending and no storage.</p>
+<h2 id="the-border-guard-decides">The border guard decides</h2>
+<p>The Commission&#39;s calculator page and its manual both say the tool only helps: it gives no right to stay for the period it shows, and the decision belongs to the border guards and other authorities of the Schengen states. Treat our number the same way. It is a careful estimate of the general rule.</p>
+<p>If the count is close to 90, or your case is one of the four above, check with the consulate of the country you are going to. If you want the official fact for your passport and destination, <a href="https://t.me/NeedPRObot?start=blog">describe your dates to the NeedPro bot</a>: it answers from its checked set and shows the source.</p>
+</div></div></div>
+
+<section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>Do the day of arrival and the day of departure count?</summary><p>Yes. Article 6(2) of the Schengen Borders Code says the date of entry is the first day of stay and the date of exit is the last. A trip from Monday to Friday is 5 days, and a same-day visit is 1.</p></details><details><summary>Does the 180-day period start on my first entry?</summary><p>No. The period moves: on each day of your stay you look back 180 days from that day. The old rule of 3 months in the 6 months after first entry is gone, except for ordinary Brazilian passports, where the EU manual says the old wording still applies under the EU–Brazil agreement.</p></details><details><summary>How long do I have to stay out to get 90 days again?</summary><p>The EU user manual says an absence of 90 days in a row always allows a new stay of up to 90 days. You can often come back sooner for a shorter trip; the calculator shows the earliest date for the trip length you enter.</p></details><details><summary>Do days in Ireland, Cyprus or the UK count towards the 90?</summary><p>No. Ireland and Cyprus are in the EU but not in the Schengen area for this rule, and the UK is outside the EU. Iceland, Liechtenstein, Norway and Switzerland are outside the EU but inside Schengen, so their days do count.</p></details><details><summary>Can I stay longer than 90 days with a visa-free passport?</summary><p>Only under a separate permission. Some Schengen countries still apply old bilateral visa waiver agreements that allow extra time in that one country, and a long-stay visa or residence permit lets you stay longer. The calculator cannot see either; ask the consulate of that country.</p></details></section>
+<section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://home-affairs.ec.europa.eu/policies/schengen/border-crossing/short-stay-calculator_en" rel="noopener">Short-stay calculator</a>, European Commission, Migration and Home Affairs</li><li><a href="https://ec.europa.eu/assets/home/visa-calculator-2/docs/short_stay_schengen_calculator_user_manual_en.pdf" rel="noopener">User manual for the short-stay 'Schengen' calculator (PDF)</a>, European Commission</li><li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02016R0399-20251012" rel="noopener">Regulation (EU) 2016/399 (Schengen Borders Code), consolidated text of 12 October 2025, Article 6</a>, EUR-Lex</li><li><a href="https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en" rel="noopener">Schengen Area</a>, European Commission, Migration and Home Affairs</li><li><a href="https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm" rel="noopener">Travel documents for non-EU nationals</a>, Your Europe (European Commission)</li></ol></section>
+<p class="small how"><a href="/about/">How we write these pages</a></p>
+<script>(function(){"use strict";
+// The Schengen short-stay count, as pure functions: no DOM, no clock, no dependencies.
+// Tested in node (tests/unit/schengen.test.mjs); the build inlines this file into the
+// calculator page with the `export` words removed (scripts/build.mjs → toolScript).
+//
+// The rule, Regulation (EU) 2016/399 (Schengen Borders Code), Art. 6, consolidated text
+// of 12.10.2025, read 2026-11-06:
+//   6(1)  "no more than 90 days in any 180-day period, which entails considering the
+//          180-day period preceding each day of stay"
+//   6(2)  "the date of entry shall be considered as the first day of stay ... and the
+//          date of exit shall be considered as the last day of stay"
+// So on any day D the window is D and the 179 days before it (the EU user manual's
+// example: on 14.6.2024 the window is 18.12.2023 – 14.6.2024), and every calendar day
+// touched by a stay counts once, the day of entry and the day of exit included.
+// The two numbers come in as options (limit, window) from config/site.json →
+// tools.schengen; the defaults below are the same numbers from the same article.
+
+const RULE = { limit: 90, window: 180 };
+
+// "YYYY-MM-DD" → whole days since 1970-01-01 (UTC), or null when it is not a real date.
+function toDay(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso ?? "").trim());
+  if (!m) return null;
+  const y = +m[1], mo = +m[2], d = +m[3];
+  if (y < 1000) return null;
+  const t = Date.UTC(y, mo - 1, d);
+  const dt = new Date(t);
+  if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== mo - 1 || dt.getUTCDate() !== d) return null;
+  return Math.round(t / 86400000);
+}
+const toIso = (n) => new Date(n * 86400000).toISOString().slice(0, 10);
+
+// Rows as typed → merged day ranges. A row with an entry and no exit is a stay that is
+// still going on: it runs to the check date. Problems are returned per row, never thrown:
+//   entry-missing   exit given, entry empty or not a date
+//   exit-invalid    exit typed but not a date
+//   exit-before     exit earlier than entry
+//   open-after-check  no exit and the entry is after the check date
+// Empty rows (both fields blank) are skipped.
+function readStays(rows, checkDay) {
+  const ranges = [], errors = [];
+  (rows || []).forEach((r, i) => {
+    const eRaw = String(r?.entry ?? "").trim(), xRaw = String(r?.exit ?? "").trim();
+    if (!eRaw && !xRaw) return;
+    const e = toDay(eRaw);
+    if (e == null) return errors.push({ row: i, field: "entry", code: "entry-missing" });
+    let x;
+    if (!xRaw) {
+      if (checkDay == null || e > checkDay) return errors.push({ row: i, field: "exit", code: "open-after-check" });
+      x = checkDay;
+    } else {
+      x = toDay(xRaw);
+      if (x == null) return errors.push({ row: i, field: "exit", code: "exit-invalid" });
+      if (x < e) return errors.push({ row: i, field: "exit", code: "exit-before" });
+    }
+    ranges.push([e, x]);
+  });
+  return { ranges: merge(ranges), errors };
+}
+
+// Overlapping or touching ranges become one: a day is counted once however many rows
+// mention it, and rows may come in any order.
+function merge(ranges) {
+  const s = ranges.map(([a, b]) => [a, b]).sort((p, q) => p[0] - q[0] || p[1] - q[1]);
+  const out = [];
+  for (const r of s) {
+    const last = out[out.length - 1];
+    if (last && r[0] <= last[1] + 1) last[1] = Math.max(last[1], r[1]);
+    else out.push(r);
+  }
+  return out;
+}
+
+// Days of the ranges that fall inside [from, to], both ends included.
+function daysIn(ranges, from, to) {
+  let n = 0;
+  for (const [a, b] of ranges) {
+    const lo = Math.max(a, from), hi = Math.min(b, to);
+    if (hi >= lo) n += hi - lo + 1;
+  }
+  return n;
+}
+
+const opt = (o) => ({ limit: o?.limit ?? RULE.limit, window: o?.window ?? RULE.window });
+
+// Days used in the window that ends on day d.
+const usedOn = (ranges, d, o) => daysIn(ranges, d - opt(o).window + 1, d);
+
+// Every day of the ranges, on or after `from`, whose window holds more than the limit.
+// Returned as ranges, so "1–5 March" reads as one stretch.
+function overstays(ranges, o, from = -Infinity) {
+  const { limit } = opt(o);
+  const bad = [];
+  for (const [a, b] of ranges) for (let d = Math.max(a, from); d <= b; d++) if (usedOn(ranges, d, o) > limit) bad.push([d, d]);
+  return merge(bad);
+}
+
+// The longest stay that starts on day `start` (joined to any stay that touches it)
+// without any day from `start` on going over the limit, counting stays already in
+// the list, later ones included. 0 = you cannot be in on that day.
+function maxStayFrom(ranges, start, o) {
+  const { limit, window } = opt(o);
+  // Only days from `start` to the last day whose window can still see the new days
+  // matter; a stay of more than `limit` days fails on its own, so n stops there.
+  const base = start - window + 1, size = 2 * window + limit;
+  const fits = (n) => {
+    const occ = new Uint8Array(size);
+    for (const [a, b] of ranges) for (let d = Math.max(a, base); d <= Math.min(b, base + size - 1); d++) occ[d - base] = 1;
+    for (let d = start; d < start + n; d++) occ[d - base] = 1;
+    const pre = new Int32Array(size + 1);
+    for (let i = 0; i < size; i++) pre[i + 1] = pre[i] + occ[i];
+    for (let i = start - base; i < start - base + n + window - 1 && i < size; i++) if (occ[i] && pre[i + 1] - pre[Math.max(0, i + 1 - window)] > limit) return false;
+    return true;
+  };
+  // Adding days never lowers any count, so the answer is the largest n that fits.
+  let lo = 0, hi = limit;
+  while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (fits(mid)) lo = mid; else hi = mid - 1; }
+  return lo;
+}
+
+// The first day on or after `from` when a stay of `length` days can begin. null when
+// length is over the limit or not a positive whole number.
+function earliestEntry(ranges, from, length, o) {
+  const { limit, window } = opt(o);
+  if (!Number.isInteger(length) || length < 1 || length > limit) return null;
+  const last = ranges.length ? ranges[ranges.length - 1][1] : from;
+  // After `window` days with no stay at all every count is back to zero, so the search ends.
+  for (let d = from; d <= Math.max(from, last) + window + 1; d++) if (maxStayFrom(ranges, d, o) >= length) return d;
+  return null;
+}
+
+// Everything the page shows, from what was typed.
+//   input: { stays: [{entry, exit}], check: "YYYY-MM-DD", plannedEntry?, plannedLength? }
+function calculate(input, o) {
+  const { limit, window } = opt(o);
+  const check = toDay(input?.check);
+  if (check == null) return { ok: false, errors: [{ field: "check", code: "check-invalid" }] };
+  const { ranges, errors } = readStays(input.stays, check);
+  const plannedEntryRaw = String(input?.plannedEntry ?? "").trim();
+  const plannedEntry = plannedEntryRaw ? toDay(plannedEntryRaw) : null;
+  if (plannedEntryRaw && plannedEntry == null) errors.push({ field: "plannedEntry", code: "planned-invalid" });
+  const lenRaw = String(input?.plannedLength ?? "").trim();
+  const plannedLength = lenRaw ? Number(lenRaw) : null;
+  if (lenRaw && (!Number.isInteger(plannedLength) || plannedLength < 1)) errors.push({ field: "plannedLength", code: "length-invalid" });
+  if (errors.length) return { ok: false, errors };
+
+  const windowStart = check - window + 1;
+  const used = usedOn(ranges, check, o);
+  const inside = ranges.some(([a, b]) => a <= check && check <= b);
+  const over = overstays(ranges, o);
+  const out = {
+    ok: true, empty: ranges.length === 0, check, windowStart, used,
+    left: Math.max(0, limit - used), inside,
+    overstay: over.length ? { from: over[0][0], to: over[over.length - 1][1], days: daysIn(over, -Infinity, Infinity) } : null,
+  };
+  // Inside on the check date: the last day you may stay if you do not leave.
+  if (inside) { const n = maxStayFrom(ranges, check, o); out.stayUntil = n ? check + n - 1 : null; }
+  // The next full stay of `limit` days: the first day after the check date (or from it, if you are out).
+  const from = inside ? ranges.find(([a, b]) => a <= check && check <= b)[1] + 1 : check;
+  out.fullStayFrom = earliestEntry(ranges, from, limit, o);
+  if (plannedEntry != null) {
+    const n = maxStayFrom(ranges, plannedEntry, o);
+    out.planned = { entry: plannedEntry, maxDays: n, lastDay: n ? plannedEntry + n - 1 : null };
+    if (plannedLength != null) {
+      out.planned.length = plannedLength;
+      out.planned.fits = n >= plannedLength;
+      out.planned.tooLong = plannedLength > limit;
+      if (!out.planned.fits && !out.planned.tooLong) out.planned.earliest = earliestEntry(ranges, plannedEntry, plannedLength, o);
+    }
+  }
+  return out;
+}
+
+// Browser side of the calculator. The build puts core.mjs (without `export`) and this
+// file into one inline script, so calculate(), toDay() and toIso() are in scope.
+// Nothing is stored and nothing is sent: the dates stay in this tab.
+var form = document.getElementById("calc-form");
+if (form) {
+  var W = JSON.parse(document.getElementById("calc-words").textContent);
+  var rows = document.getElementById("calc-rows");
+  var tpl = document.getElementById("calc-row");
+  var out = document.getElementById("calc-result");
+  var check = document.getElementById("calc-check");
+  var planEntry = document.getElementById("calc-plan-entry");
+  var planLength = document.getElementById("calc-plan-length");
+  var opts = { limit: +form.dataset.limit, window: +form.dataset.window };
+  var lang = form.dataset.locale || document.documentElement.lang;
+  var fmt = new Intl.DateTimeFormat(lang, { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+  var plural = new Intl.PluralRules(lang);
+  var seq = 0;
+  // Day, month, year and nothing after the year (ru-RU would add "г.", and a sentence's own full stop follows).
+  var date = function (n) {
+    var out = "", done = false;
+    fmt.formatToParts(new Date(n * 86400000)).forEach(function (x) { if (!done) out += x.value; if (x.type === "year") done = true; });
+    return out;
+  };
+  var days = function (n) { return (W.days[plural.select(n)] || W.days.other).replace("{n}", n); };
+  var fill = function (s, v) { return s.replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }); };
+  var todayIso = function () { var d = new Date(); return new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())).toISOString().slice(0, 10); };
+
+  // Rows are numbered again after every add or remove so "Stay 2" always means the second row.
+  var renumber = function () {
+    var list = rows.querySelectorAll(".calc-row");
+    list.forEach(function (li, i) {
+      li.querySelector(".calc-row-n").textContent = fill(W.stay_n, { n: i + 1 });
+      var rm = li.querySelector(".calc-remove");
+      rm.setAttribute("aria-label", fill(W.remove_label, { n: i + 1 }));
+      rm.hidden = list.length === 1;
+    });
+  };
+  var addRow = function (focus) {
+    var li = tpl.content.firstElementChild.cloneNode(true);
+    seq++;
+    li.querySelectorAll("label[data-for]").forEach(function (l) {
+      var name = l.getAttribute("data-for"), id = "calc-" + name + "-" + seq;
+      l.htmlFor = id;
+      var input = l.parentNode.querySelector("input");
+      input.id = id;
+      if (name === "exit") {
+        var hint = document.createElement("p");
+        hint.className = "calc-hint"; hint.id = id + "-hint"; hint.textContent = W.exit_hint;
+        l.parentNode.appendChild(hint);
+        input.setAttribute("aria-describedby", hint.id);
+      }
+    });
+    li.querySelector(".calc-remove").addEventListener("click", function () {
+      var next = li.nextElementSibling || li.previousElementSibling;
+      li.remove();
+      renumber();
+      // Focus goes to the row that took its place, never back to the page top.
+      if (next) next.querySelector("input").focus();
+    });
+    rows.appendChild(li);
+    renumber();
+    if (focus) li.querySelector("input").focus();
+  };
+
+  var clearErrors = function () {
+    form.querySelectorAll("[aria-invalid]").forEach(function (el) {
+      el.removeAttribute("aria-invalid");
+      var hint = el.getAttribute("data-hint");
+      if (hint != null) { if (hint) el.setAttribute("aria-describedby", hint); else el.removeAttribute("aria-describedby"); el.removeAttribute("data-hint"); }
+    });
+    form.querySelectorAll(".calc-error").forEach(function (el) { el.remove(); });
+  };
+  var markError = function (input, text) {
+    var p = document.createElement("p");
+    p.className = "calc-error"; p.id = input.id + "-error"; p.textContent = text;
+    input.parentNode.appendChild(p);
+    input.setAttribute("aria-invalid", "true");
+    input.setAttribute("data-hint", input.getAttribute("aria-describedby") || "");
+    input.setAttribute("aria-describedby", ((input.getAttribute("aria-describedby") || "") + " " + p.id).trim());
+  };
+
+  var show = function (html) { out.innerHTML = html; };
+  var esc = function (s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); };
+  var p = function (s) { return "<p>" + esc(s) + "</p>"; };
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    clearErrors();
+    var li = rows.querySelectorAll(".calc-row");
+    var stays = [];
+    li.forEach(function (row) { stays.push({ entry: row.querySelector('[name="entry"]').value, exit: row.querySelector('[name="exit"]').value }); });
+    var r = calculate({ stays: stays, check: check.value, plannedEntry: planEntry.value, plannedLength: planLength.value }, opts);
+    if (!r.ok) {
+      var first = null;
+      r.errors.forEach(function (e) {
+        var input = e.row != null ? li[e.row].querySelector('[name="' + e.field + '"]') : { check: check, plannedEntry: planEntry, plannedLength: planLength }[e.field];
+        markError(input, W["e_" + e.code.replace(/-/g, "_")] || W.e_summary);
+        first = first || input;
+      });
+      show(p(W.e_summary));
+      if (first) first.focus();
+      return;
+    }
+    var html = "<dl class=\"spec calc-figures\">" +
+      "<div><dt>" + esc(W.lbl_used) + "</dt><dd>" + esc(fill(W.used_of, { used: r.used, limit: opts.limit })) + "</dd></div>" +
+      "<div><dt>" + esc(W.lbl_left) + "</dt><dd>" + esc(days(r.left)) + "</dd></div>" +
+      "<div><dt>" + esc(W.lbl_window) + "</dt><dd>" + esc(date(r.windowStart)) + " – " + esc(date(r.check)) + "</dd></div></dl>";
+    if (r.empty) html += p(fill(W.r_empty, { check: date(r.check), limit: days(opts.limit) }));
+    if (r.overstay) html += p(fill(W.r_overstay, { from: date(r.overstay.from), to: date(r.overstay.to), days: days(r.overstay.days), limit: opts.limit }));
+    if (r.inside) html += p(r.stayUntil != null ? fill(W.r_until, { date: date(r.stayUntil) }) : fill(W.r_until_none, { check: date(r.check) }));
+    if (r.fullStayFrom != null) html += p(fill(W.r_full, { date: date(r.fullStayFrom), limit: days(opts.limit) }));
+    if (r.planned) {
+      var P = r.planned, v = { entry: date(P.entry), n: days(P.maxDays), last: P.lastDay != null ? date(P.lastDay) : "", len: P.length != null ? days(P.length) : "", limit: days(opts.limit) };
+      html += p(P.maxDays ? fill(W.r_plan_max, v) : fill(W.r_plan_none, v));
+      if (P.length != null) {
+        if (P.tooLong) html += p(fill(W.r_plan_toolong, v));
+        else if (P.fits) html += p(fill(W.r_plan_fits, v));
+        else html += p(P.earliest != null ? fill(W.r_plan_earliest, Object.assign(v, { date: date(P.earliest) })) : fill(W.r_plan_never, v));
+      }
+    }
+    html += "<p class=\"calc-note\">" + esc(W.r_note) + "</p>";
+    show(html);
+  });
+  form.addEventListener("reset", function () {
+    clearErrors();
+    // After the browser has cleared the fields: one empty row and today's date again.
+    setTimeout(function () { rows.innerHTML = ""; addRow(false); check.value = todayIso(); show(""); }, 0);
+  });
+  document.getElementById("calc-add").addEventListener("click", function () { addRow(true); });
+
+  addRow(false);
+  check.value = todayIso();
+  form.hidden = false;
+}
+
+})();</script>
+<section class="related"><h2 id="read-next">Read next</h2><ul class="entries"><li><a href="/visas-documents/passport-validity/"><span class="entry-title">Passport validity requirements by country: 7 rules</span><span class="entry-desc">Schengen wants 3 months after you leave and an issue date under 10 years; UAE and India want 6 months; Turkey wants your stay plus 60 days. Sources inside.</span></a><time datetime="2026-11-02">2 November 2026</time></li><li><a href="/work-freelance/digital-nomad-visa/"><span class="entry-title">Digital nomad visa: what it is and four country rules</span><span class="entry-desc">A digital nomad visa lets you live in a country while working for a foreign employer. Spain, Thailand, the UAE and Indonesia set income or savings bars.</span></a><time datetime="2026-11-01">1 November 2026</time></li><li><a href="/visas-documents/uk-eta-cost/"><span class="entry-title">UK ETA cost in 2026: £20, and who needs one in transit</span><span class="entry-desc">A UK ETA costs £20 on GOV.UK, lasts 2 years or until your passport expires, and is needed for transit if you pass through UK border control.</span></a><time datetime="2026-11-05">5 November 2026</time></li></ul></section>
+</article><div class="bot-everywhere"><aside class="bot" aria-labelledby="bot-h"><div class="carrier"><div class="punch" aria-hidden="true"><svg class="chip-big" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg></div><div class="bot-text"><h2 id="bot-h">Ask NeedPro</h2>
+<p>Describe your situation in your own words. The bot answers with a checked fact, the official source and the date it was checked.</p>
+<p><a class="button" href="https://t.me/NeedPRObot?start=blog" rel="noopener" data-goatcounter-click="bot">Open in Telegram</a></p>
+<p class="small">If NeedPro has no checked fact for your case, it says so.</p></div></div>
+</aside></div></main>
+<footer class="site"><div class="bar">
+<p>Visas, insurance, SIM cards, money and moving abroad: answers from official sources, each with the date it was checked.</p>
+<p><a href="/about/">About these pages</a> · <a href="/feed.xml">Feed</a></p>
+<p class="small">We write these articles with help from an AI model. Facts come from NeedPro's checked set and the official pages listed under each article, each with the date it was checked; anything we could not confirm is left out. Rules change, so check with the consulate or the official site before you act.</p>
+
+</div></footer>
+</body>
+</html>
