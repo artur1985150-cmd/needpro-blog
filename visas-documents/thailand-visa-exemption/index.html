@@ -20,7 +20,7 @@
 <link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://needproblog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://needproblog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
 <meta name="yandex-verification" content="10e73944ba46752e">
 <style>/* NeedPro Guides — set like the carrier card a SIM is popped out of on arrival.
@@ -338,6 +338,15 @@ footer.site p:first-child{color:var(--on-plate);font-weight:550}
 footer.site a{color:var(--on-plate);text-decoration-color:var(--on-plate-2)}
 footer.site .small{color:var(--on-plate-2)}
 
+/* «Add this table to your site» under bigger article tables (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.8rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;display:flex;align-items:center;min-height:44px;font:600 var(--t-label)/1.3 var(--frame);color:var(--ink-2)}
+.embed summary:hover,.embed[open] summary{color:var(--ink)}
+.embed p{margin:.4rem 0}
+.embed label{display:block;margin:.6rem 0 .3rem}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--tint);border:1px solid var(--rule);border-radius:8px;padding:10px 12px;resize:vertical}
+.embed-copy{cursor:pointer}
+
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 @media print{header.site .tabs,header.site .top,.button,.margin,.theme,.bot-everywhere{display:none}footer.site,footer.site p,footer.site .small,footer.site a{background:none;color:#000}.sheet{clip-path:none}header.site{background:none;color:#000}.running h1,.running-name,.running-name a,.running .lead{color:#000}body{background:#fff;color:#000}}
 </style>
@@ -348,7 +357,7 @@ footer.site .small{color:var(--on-plate-2)}
 <header class="site"><div class="band">
 <div class="top"><a class="brand" href="/"><svg class="chip" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg>NeedPro Guides</a><a class="about" href="/about/">About</a><div class="controls"><nav class="langs" aria-label="Language"><span class="lang-here" lang="en" aria-current="true">English</span><a class="lang" href="/ru/" hreflang="ru" lang="ru" data-goatcounter-click="lang-ru">Русский</a></nav><button class="theme" type="button" hidden aria-label="Night pages" aria-pressed="false"><span class="theme-day" aria-hidden="true">Day</span><span class="theme-night" aria-hidden="true">Night</span></button></div></div>
 <div class="running"><p class="running-name"><a href="/visas-documents/">Visas &amp; documents</a></p></div>
-<nav class="tabs" aria-label="Sections"><div class="tabs-row"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/work-freelance/">Work &amp; freelance</a></div><details class="tabs-phone"><summary>All sections <span class="count">7</span></summary><div class="tabs-list"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/work-freelance/">Work &amp; freelance</a></div></details></nav></div></header>
+<nav class="tabs" aria-label="Sections"><div class="tabs-row"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/shopping-gadgets/">Shopping &amp; gadgets</a><a href="/work-freelance/">Work &amp; freelance</a><a href="/moving-things/">Moving your things</a></div><details class="tabs-phone"><summary>All sections <span class="count">9</span></summary><div class="tabs-list"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/shopping-gadgets/">Shopping &amp; gadgets</a><a href="/work-freelance/">Work &amp; freelance</a><a href="/moving-things/">Moving your things</a></div></details></nav></div></header>
 <script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/visas-documents/">Visas &amp; documents</a> <span aria-hidden="true">›</span> <span aria-current="page">Thailand visa exemption 2026: 30 days, not 60</span></nav>
 <main id="main"><article class="sheet article"><div class="layout">
@@ -405,7 +414,55 @@ footer.site .small{color:var(--on-plate-2)}
 <td>Immigration Bureau, 30 Oct 2026</td>
 </tr>
 </tbody></table>
-</div><h2 id="which-countries-qualify">Which countries qualify?</h2>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;The rules at a glance&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Rule&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;As stated on the official page&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Source, checked&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Length of stay&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Up to 30 days&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Oslo embassy, 30 Oct 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Who&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Holders of ordinary passports of the listed countries and territories (60 on the list)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Oslo embassy, 30 Oct 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Purpose&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Tourism only&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Oslo embassy, 30 Oct 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Proof at the border&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Confirmed air, train, bus or boat ticket to leave Thailand within 30 days of arrival&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Oslo embassy, 30 Oct 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Land-border entries&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;No more than twice per calendar year (exceptions for Malaysia, Brunei, Indonesia, Singapore)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;TAT, 1 Sep 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Arrival card&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;TDAC online, 3 days before arrival&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Immigration Bureau, 30 Oct 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://blog.needpro.app/visas-documents/thailand-visa-exemption/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;NeedPro Guides&lt;/a&gt;. Figures checked on 6 November 2026. The page lists the official sources.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><h2 id="which-countries-qualify">Which countries qualify?</h2>
 <p>The Oslo embassy page lists 60 countries and territories, under the heading of ordinary passports that can visit Thailand &quot;with 30 Days Visa Exemption for Tourist Purposes&quot;. Two conditions from the same page are easy to miss:</p>
 <ul>
 <li>the scheme only covers passports issued by the listed countries;</li>
@@ -429,9 +486,9 @@ footer.site .small{color:var(--on-plate-2)}
 <li>Download the card after you submit it. You can also download or print a copy from the email address you gave. Keep it for the whole stay.</li>
 <li>Read the result in the email. If it says &quot;AUTOMATED BORDER CONTROL - ELIGIBLE&quot;, you can use the automatic gates; &quot;IMMIGRATION COUNTER - MANUAL PROCESSING&quot; means the regular counter.</li>
 </ol>
-<p>The guide also says plainly that the TDAC &quot;is not a visa&quot;. Filing it does not give you the right to enter. Other countries have their own online steps before a visa-free trip, with different rules: the UK has the <a href="/visas-documents/uk-eta-cost/">ETA</a> and the US has the ESTA.</p>
+<p>The guide also says plainly that the TDAC &quot;is not a visa&quot;. Filing it does not give you the right to enter. Other countries have their own online steps before a visa-free trip, with different rules: the UK has the <a href="/visas-documents/uk-eta-cost/">ETA</a> and the US has the <a href="/visas-documents/esta-validity/">ESTA</a>.</p>
 <h2 id="after-you-arrive-where-you-stay-matters-too">After you arrive: where you stay matters too</h2>
-<p>Thailand also has a separate address notification for foreigners, the TM30. It is not the TDAC and not an arrival card. If you will not stay in a hotel, read what TM30 is and who files it before you go.</p>
+<p>Thailand also has a separate address notification for foreigners, the TM30. It is not the TDAC and not an arrival card. If you will not stay in a hotel, read <a href="/where-to-stay/tm30-thailand/">what TM30 is and who files it</a> before you go.</p>
 <h2 id="checklist-before-you-fly">Checklist before you fly</h2>
 <ol>
 <li>Check that your nationality is on the current list at the Thai embassy for your country.</li>
@@ -442,13 +499,13 @@ footer.site .small{color:var(--on-plate-2)}
 <li>If your trip is for work, study or longer than 30 days, apply for the right visa instead.</li>
 </ol>
 <p>Entry is decided by the immigration officer, and lists and limits change. Confirm your case on the Thai embassy site for your country or with the Immigration Bureau.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 
 <section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>Is the Thailand 60 day visa exemption still available?</summary><p>No. The Tourism Authority of Thailand said the 60-day measure would end on 15 September 2026, and the Royal Thai Embassy in Oslo lists a stay of up to 30 days starting from that date.</p></details><details><summary>Which countries are on the Thailand visa exemption list?</summary><p>The Royal Thai Embassy in Oslo listed 60 countries and territories on 30 October 2026. The list is for ordinary passports only and changes, so check your nationality on the current embassy page before booking.</p></details><details><summary>Can I work or study on the visa exemption?</summary><p>No. The embassy page says the scheme is for tourism purposes only. Work or study needs the matching visa.</p></details><details><summary>How many times a year can I use the exemption?</summary><p>For land-border checkpoints, the Tourism Authority of Thailand says no more than twice per calendar year, except for nationals of Malaysia, Brunei, Indonesia and Singapore. The Oslo embassy applies the twice-a-year limit to Norwegian and Icelandic passports for all means of travel. Check the embassy page for your country.</p></details><details><summary>When do I fill in the TDAC?</summary><p>The Immigration Bureau's guide says to submit it 3 days in advance of your arrival date. It is required for all non-Thai nationals and is not a visa.</p></details></section>
 <section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://oslo.thaiembassy.org/en/page/visa-exemption?menu=60b4c9a7180a9f3d4f28a932" rel="noopener">Visa Exemption</a>, Royal Thai Embassy, Oslo (Ministry of Foreign Affairs of Thailand)</li><li><a href="https://tdac.immigration.go.th/manual/en/" rel="noopener">Thailand Digital Arrival Card: official guide</a>, Thailand Immigration Bureau</li></ol></section>
 <p class="small how"><a href="/about/">How we write these pages</a></p>
 
-<section class="related"><h2 id="read-next">Read next</h2><ul class="entries"><li><a href="/visas-documents/passport-validity/"><span class="entry-title">Passport validity requirements by country: 7 rules</span><span class="entry-desc">Schengen wants 3 months after you leave and an issue date under 10 years; UAE and India want 6 months; Turkey wants your stay plus 60 days. Sources inside.</span></a><time datetime="2026-11-02">2 November 2026</time></li></ul></section>
+<section class="related"><h2 id="read-next">Read next</h2><ul class="entries"><li><a href="/visas-documents/passport-validity/"><span class="entry-title">Passport validity requirements by country: 7 rules</span><span class="entry-desc">Schengen wants 3 months after you leave and an issue date under 10 years; UAE and India want 6 months; Turkey wants your stay plus 60 days. Sources inside.</span></a><time datetime="2026-11-02">2 November 2026</time></li><li><a href="/where-to-stay/tm30-thailand/"><span class="entry-title">TM30 in Thailand: who files it and why it matters</span><span class="entry-desc">TM30 is the address report your Thai landlord or hotel must file with immigration within 24 hours of your arrival. It is not the TDAC arrival card.</span></a><time datetime="2026-11-09">9 November 2026</time></li></ul></section>
 </article><div class="bot-everywhere"><aside class="bot" aria-labelledby="bot-h"><div class="carrier"><div class="punch" aria-hidden="true"><svg class="chip-big" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg></div><div class="bot-text"><h2 id="bot-h">Ask NeedPro</h2>
 <p>Describe your situation in your own words. The bot answers with a checked fact, the official source and the date it was checked.</p>
 <p><a class="button" href="https://t.me/NeedPRObot?start=blog" rel="noopener" data-goatcounter-click="bot">Open in Telegram</a></p>

@@ -20,7 +20,7 @@
 <link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://needproblog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://needproblog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
 <meta name="yandex-verification" content="10e73944ba46752e">
 <style>/* NeedPro Guides — set like the carrier card a SIM is popped out of on arrival.
@@ -338,6 +338,15 @@ footer.site p:first-child{color:var(--on-plate);font-weight:550}
 footer.site a{color:var(--on-plate);text-decoration-color:var(--on-plate-2)}
 footer.site .small{color:var(--on-plate-2)}
 
+/* «Add this table to your site» under bigger article tables (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.8rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;display:flex;align-items:center;min-height:44px;font:600 var(--t-label)/1.3 var(--frame);color:var(--ink-2)}
+.embed summary:hover,.embed[open] summary{color:var(--ink)}
+.embed p{margin:.4rem 0}
+.embed label{display:block;margin:.6rem 0 .3rem}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--tint);border:1px solid var(--rule);border-radius:8px;padding:10px 12px;resize:vertical}
+.embed-copy{cursor:pointer}
+
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 @media print{header.site .tabs,header.site .top,.button,.margin,.theme,.bot-everywhere{display:none}footer.site,footer.site p,footer.site .small,footer.site a{background:none;color:#000}.sheet{clip-path:none}header.site{background:none;color:#000}.running h1,.running-name,.running-name a,.running .lead{color:#000}body{background:#fff;color:#000}}
 </style>
@@ -348,7 +357,7 @@ footer.site .small{color:var(--on-plate-2)}
 <header class="site"><div class="band">
 <div class="top"><a class="brand" href="/"><svg class="chip" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg>NeedPro Guides</a><a class="about" href="/about/">About</a><div class="controls"><nav class="langs" aria-label="Language"><span class="lang-here" lang="en" aria-current="true">English</span><a class="lang" href="/ru/" hreflang="ru" lang="ru" data-goatcounter-click="lang-ru">Русский</a></nav><button class="theme" type="button" hidden aria-label="Night pages" aria-pressed="false"><span class="theme-day" aria-hidden="true">Day</span><span class="theme-night" aria-hidden="true">Night</span></button></div></div>
 <div class="running"><p class="running-name"><a href="/work-freelance/">Work &amp; freelance</a></p></div>
-<nav class="tabs" aria-label="Sections"><div class="tabs-row"><a href="/visas-documents/">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/work-freelance/" aria-current="page">Work &amp; freelance</a></div><details class="tabs-phone"><summary>All sections <span class="count">7</span></summary><div class="tabs-list"><a href="/visas-documents/">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/work-freelance/" aria-current="page">Work &amp; freelance</a></div></details></nav></div></header>
+<nav class="tabs" aria-label="Sections"><div class="tabs-row"><a href="/visas-documents/">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/shopping-gadgets/">Shopping &amp; gadgets</a><a href="/work-freelance/" aria-current="page">Work &amp; freelance</a><a href="/moving-things/">Moving your things</a></div><details class="tabs-phone"><summary>All sections <span class="count">9</span></summary><div class="tabs-list"><a href="/visas-documents/">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/shopping-gadgets/">Shopping &amp; gadgets</a><a href="/work-freelance/" aria-current="page">Work &amp; freelance</a><a href="/moving-things/">Moving your things</a></div></details></nav></div></header>
 <script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/work-freelance/">Work &amp; freelance</a> <span aria-hidden="true">›</span> <span aria-current="page">Digital nomad visa: what it is and four country rules</span></nav>
 <main id="main"><article class="sheet article"><div class="layout">
@@ -406,7 +415,50 @@ footer.site .small{color:var(--on-plate-2)}
 <td>Employees of a company established outside Indonesia</td>
 </tr>
 </tbody></table>
-</div><p>Sources: exteriores.gob.es, image.mfa.go.th and fukuoka.thaiembassy.org, u.ae, evisa.imigrasi.go.id; checked 31 October 2026.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Four countries side by side&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Country and visa&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Money test&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;How long&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Who it is for&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Spain: international teleworker visa&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Income of 200% of the Spanish minimum wage (SMI); +75% SMI for the first family member, +25% for each further one&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Visa up to 1 year; then a residence permit of up to 3 years&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Graduates or people with 3+ years of experience working for a company outside Spain&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Thailand: Destination Thailand Visa (DTV)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Bank balance of at least 500,000 baht&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;5 years, multiple entry; up to 180 days per entry&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Remote workers and freelancers, soft power activities, their spouses and children under 20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;UAE: virtual work residence visa&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Salary certificate of at least USD 3,500 a month&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1 year&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Employees of a company outside the UAE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Indonesia: E33G remote worker visa&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Income of at least USD 60,000 a year; bank statement of at least USD 2,000 over 3 months&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Stay of up to 1 year; enter within 90 days of issue&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Employees of a company established outside Indonesia&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://blog.needpro.app/work-freelance/digital-nomad-visa/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;NeedPro Guides&lt;/a&gt;. Figures checked on 1 November 2026. The page lists the official sources.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p>Sources: exteriores.gob.es, image.mfa.go.th and fukuoka.thaiembassy.org, u.ae, evisa.imigrasi.go.id; checked 31 October 2026.</p>
 <p>Spain ties its figure to the minimum wage, so the euro amount changes each year. The consulate sheet we read still quotes the 2023 wage; work the figure out against the current SMI. Our article on the Spain digital nomad visa does that for 2026 and explains the two ways to apply.</p>
 <h2 id="thailand-s-dtv-in-two-paragraphs">Thailand&#39;s DTV in two paragraphs</h2>
 <p>The DTV is the odd one out. It is a five-year multiple-entry visa with a stay of up to 180 days per entry, and the money test is savings, not salary: a bank statement showing at least 500,000 baht. The Thai embassy checklist we read asks for the last three months of statements.</p>
@@ -425,7 +477,7 @@ footer.site .small{color:var(--on-plate-2)}
 <li>Write down the date you read the rules. Fees and documents change, and the figure that counts is the one on the day you file.</li>
 </ol>
 <p>The decision is made by the consulate or immigration service of each country. Confirm the rules on its official site before you file. If your case depends on your citizenship or where you live now, <a href="https://t.me/NeedPRObot?start=blog">describe it to the NeedPro bot</a>: it answers from checked facts with the source and the check date, and says so when it has no fact.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 
 <section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>What is a digital nomad visa?</summary><p>It is a visa or residence permit for someone who lives in a country while working remotely for an employer or clients based elsewhere. Each country names it differently: Spain's international teleworker visa, Thailand's Destination Thailand Visa (DTV), the UAE's virtual work visa, Indonesia's E33G remote worker visa.</p></details><details><summary>Can I work remotely on a tourist visa?</summary><p>There is no clean official yes. Most immigration laws do not address a foreign client with the worker physically present, and the countries that created nomad visas treat remote work as needing its own status. Indonesia states a ban on pay from Indonesian people or companies even for E33G holders. Ask the immigration authority of the country you are in.</p></details><details><summary>Which country has the lowest income requirement for a digital nomad visa?</summary><p>The four we checked use different measures, so a straight ranking misleads. The UAE asks for a USD 3,500 monthly salary, Spain for 200% of its minimum wage a month, Indonesia for USD 60,000 a year, and Thailand for a 500,000 baht bank balance rather than an income.</p></details><details><summary>Does a digital nomad visa let me work for a local company?</summary><p>No. These visas are built around work for a company outside the country. The Thai embassy in Budapest says DTV holders may not get a Thai work permit or freelance for Thai clients, and Indonesia bans pay from Indonesian sources on the E33G. A local job needs a work permit.</p></details><details><summary>Do I pay tax in the country of my nomad visa?</summary><p>Tax residence is a separate question from the visa. Check it with the tax authority of the country you move to and of your home country.</p></details></section>
 <section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://evisa.imigrasi.go.id/front/faq/e076131c-0d39-469b-afaf-75fc66aff923" rel="noopener">E33G remote worker visa: general information</a>, Directorate General of Immigration of Indonesia (evisa.imigrasi.go.id)</li><li><a href="https://www.exteriores.gob.es/Consulados/santiagodechile/es/ServiciosConsulares/Documents/Requisitos%20visado%20TEL.pdf" rel="noopener">Visado de residencia de teletrabajo de carácter internacional: requisitos</a>, Consulate General of Spain in Santiago de Chile (exteriores.gob.es)</li><li><a href="https://u.ae/en/information-and-services/visa-and-emirates-id/Types-of-visas/Residence-visa/residence-visa-for-working-outside-the-uae" rel="noopener">Residence visa for working outside the UAE</a>, UAE Government portal (u.ae)</li><li><a href="https://image.mfa.go.th/mfa/0/n3gTFT2TOE/Visa_Requirements/Checklist_DTV.pdf" rel="noopener">Checklist of Destination Thailand Visa (DTV)</a>, Ministry of Foreign Affairs of Thailand (image.mfa.go.th, Royal Thai Embassy Kuala Lumpur)</li><li><a href="https://fukuoka.thaiembassy.org/en/page/endtvvisa" rel="noopener">Destination Thailand Visa (DTV)</a>, Royal Thai Consulate-General, Fukuoka (thaiembassy.org)</li></ol></section>

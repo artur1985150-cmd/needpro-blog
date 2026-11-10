@@ -22,7 +22,7 @@
 <link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://needproblog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://needproblog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
 <meta name="yandex-verification" content="10e73944ba46752e">
 <style>/* NeedPro Guides — set like the carrier card a SIM is popped out of on arrival.
@@ -340,6 +340,15 @@ footer.site p:first-child{color:var(--on-plate);font-weight:550}
 footer.site a{color:var(--on-plate);text-decoration-color:var(--on-plate-2)}
 footer.site .small{color:var(--on-plate-2)}
 
+/* «Add this table to your site» under bigger article tables (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.8rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;display:flex;align-items:center;min-height:44px;font:600 var(--t-label)/1.3 var(--frame);color:var(--ink-2)}
+.embed summary:hover,.embed[open] summary{color:var(--ink)}
+.embed p{margin:.4rem 0}
+.embed label{display:block;margin:.6rem 0 .3rem}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--tint);border:1px solid var(--rule);border-radius:8px;padding:10px 12px;resize:vertical}
+.embed-copy{cursor:pointer}
+
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 @media print{header.site .tabs,header.site .top,.button,.margin,.theme,.bot-everywhere{display:none}footer.site,footer.site p,footer.site .small,footer.site a{background:none;color:#000}.sheet{clip-path:none}header.site{background:none;color:#000}.running h1,.running-name,.running-name a,.running .lead{color:#000}body{background:#fff;color:#000}}
 </style>
@@ -350,7 +359,7 @@ footer.site .small{color:var(--on-plate-2)}
 <header class="site"><div class="band">
 <div class="top"><a class="brand" href="/"><svg class="chip" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg>NeedPro Guides</a><a class="about" href="/about/">About</a><div class="controls"><nav class="langs" aria-label="Language"><span class="lang-here" lang="en" aria-current="true">English</span><a class="lang" href="/ru/vizy-i-dokumenty/viza-bali/" hreflang="ru" lang="ru" data-goatcounter-click="lang-ru">Русский</a></nav><button class="theme" type="button" hidden aria-label="Night pages" aria-pressed="false"><span class="theme-day" aria-hidden="true">Day</span><span class="theme-night" aria-hidden="true">Night</span></button></div></div>
 <div class="running"><p class="running-name"><a href="/visas-documents/">Visas &amp; documents</a></p></div>
-<nav class="tabs" aria-label="Sections"><div class="tabs-row"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/work-freelance/">Work &amp; freelance</a></div><details class="tabs-phone"><summary>All sections <span class="count">7</span></summary><div class="tabs-list"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/work-freelance/">Work &amp; freelance</a></div></details></nav></div></header>
+<nav class="tabs" aria-label="Sections"><div class="tabs-row"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/shopping-gadgets/">Shopping &amp; gadgets</a><a href="/work-freelance/">Work &amp; freelance</a><a href="/moving-things/">Moving your things</a></div><details class="tabs-phone"><summary>All sections <span class="count">9</span></summary><div class="tabs-list"><a href="/visas-documents/" aria-current="page">Visas &amp; documents</a><a href="/where-to-stay/">Where to stay</a><a href="/insurance-health/">Insurance &amp; health</a><a href="/internet-sim/">Internet &amp; SIM</a><a href="/money-transfers/">Money &amp; transfers</a><a href="/tickets-transport/">Tickets &amp; transport</a><a href="/shopping-gadgets/">Shopping &amp; gadgets</a><a href="/work-freelance/">Work &amp; freelance</a><a href="/moving-things/">Moving your things</a></div></details></nav></div></header>
 <script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/visas-documents/">Visas &amp; documents</a> <span aria-hidden="true">›</span> <span aria-current="page">Bali visa on arrival 2026: cost, 30 days, documents</span></nav>
 <main id="main"><article class="sheet article"><div class="layout">
@@ -413,7 +422,60 @@ footer.site .small{color:var(--on-plate-2)}
 <td>31 October 2026</td>
 </tr>
 </tbody></table>
-</div><p><em>Source: evisa.imigrasi.go.id, visa selection, checked 31 October 2026.</em></p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;How much does the Bali visa on arrival cost?&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Item&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;What the official site says&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Checked&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Visa type&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;B1 - Tourist (Visa On Arrival)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31 October 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Fee&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Rp 500,000&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31 October 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Stay&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;up to 30 days&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31 October 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Extension&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;extendable for another 30 days&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31 October 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Visa validity&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;90 days (not the same as the stay)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31 October 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Passport&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;valid for at least 6 months&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31 October 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Other document&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;outbound ticket from Indonesia&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31 October 2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://blog.needpro.app/visas-documents/bali-visa-on-arrival/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;NeedPro Guides&lt;/a&gt;. Figures checked on 1 November 2026. The page lists the official sources.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p><em>Source: evisa.imigrasi.go.id, visa selection, checked 31 October 2026.</em></p>
 <p>Two other costs often get mixed into the visa price on travel sites. The Bali tourist levy of Rp 150,000 is a provincial charge, not part of the visa. And agencies that apply for you add their own service fee on top. Only the government fee appears on the official site.</p>
 <h2 id="how-long-can-you-stay-and-can-you-extend-it">How long can you stay, and can you extend it?</h2>
 <p>The B1 visa gives a stay of up to 30 days. The official terms say it is &quot;extendable for another 30 days&quot;, and the home page of the e-Visa site has an &quot;Extend My Visa&quot; option. The extension is not automatic: you apply for it and immigration decides. Apply well before your 30 days end.</p>
@@ -450,7 +512,7 @@ footer.site .small{color:var(--on-plate-2)}
 <h2 id="before-you-rely-on-these-numbers">Before you rely on these numbers</h2>
 <p>Every figure here comes from an official Indonesian page we opened on 31 October 2026. Fees, country lists and stay periods change, and the decision at the border belongs to the immigration officer. Check the e-Visa site for your passport shortly before travel, and if something does not match this page, the official site is right.</p>
 <p>Heading to Thailand on the same trip? Its rules work differently; see <a href="/visas-documents/thailand-visa-exemption/">Thailand&#39;s visa exemption</a>. And if you plan to use mobile data on arrival, <a href="/internet-sim/esim-phone-check/">check that your phone supports eSIM</a> before you leave.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 
 <section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>How much is the Bali visa on arrival in 2026?</summary><p>Rp 500,000 for the B1 Tourist visa on arrival, according to the official e-Visa site's visa selection on 31 October 2026. The Bali tourist levy of Rp 150,000 is a separate payment.</p></details><details><summary>How long can I stay on a Bali visa on arrival?</summary><p>Up to 30 days. The official site says the B1 visa is extendable for another 30 days, so the longest stay on it is 60 days if the extension is granted.</p></details><details><summary>Can I get a visa on arrival online before I fly to Bali?</summary><p>Yes. The electronic version (e-VOA) is applied for on evisa.imigrasi.go.id and paid by card or SIMPONI. One application can cover up to 5 people.</p></details><details><summary>Do US, UK, Australian and Indian citizens get a visa on arrival for Bali?</summary><p>On 31 October 2026 the official visa selection offered B1 Tourist (Visa On Arrival) for passports of the USA, the UK (British citizen), Australia and India, among many others. Check your own passport on the site.</p></details><details><summary>What documents do I need for the Bali visa on arrival?</summary><p>A passport valid for at least 6 months and an outbound ticket from Indonesia, shown to the immigration officer on arrival. The site also asks you to have enough money for your stay.</p></details></section>
 <section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://evisa.imigrasi.go.id/web/visa-selection" rel="noopener">Visa selection: B1 Tourist (Visa On Arrival)</a>, Directorate General of Immigration, Indonesia (official e-Visa website)</li><li><a href="https://evisa.imigrasi.go.id/" rel="noopener">The Official e-Visa Website for Indonesia</a>, Directorate General of Immigration, Indonesia</li><li><a href="https://lovebali.baliprov.go.id/faq" rel="noopener">FAQ: Foreign Tourists Levy</a>, Love Bali (Bali Provincial Government)</li><li><a href="https://www.beacukai.go.id/barang-penumpang" rel="noopener">Barang Penumpang (passenger goods)</a>, Directorate General of Customs and Excise (Bea Cukai), Indonesia</li></ol></section>

@@ -23,7 +23,7 @@
 <link rel="preload" href="/fonts/onest-cyr.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://needproblog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://needproblog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
 <meta name="yandex-verification" content="10e73944ba46752e">
 <style>/* NeedPro Guides — set like the carrier card a SIM is popped out of on arrival.
@@ -341,6 +341,15 @@ footer.site p:first-child{color:var(--on-plate);font-weight:550}
 footer.site a{color:var(--on-plate);text-decoration-color:var(--on-plate-2)}
 footer.site .small{color:var(--on-plate-2)}
 
+/* «Add this table to your site» under bigger article tables (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.8rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;display:flex;align-items:center;min-height:44px;font:600 var(--t-label)/1.3 var(--frame);color:var(--ink-2)}
+.embed summary:hover,.embed[open] summary{color:var(--ink)}
+.embed p{margin:.4rem 0}
+.embed label{display:block;margin:.6rem 0 .3rem}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--tint);border:1px solid var(--rule);border-radius:8px;padding:10px 12px;resize:vertical}
+.embed-copy{cursor:pointer}
+
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 @media print{header.site .tabs,header.site .top,.button,.margin,.theme,.bot-everywhere{display:none}footer.site,footer.site p,footer.site .small,footer.site a{background:none;color:#000}.sheet{clip-path:none}header.site{background:none;color:#000}.running h1,.running-name,.running-name a,.running .lead{color:#000}body{background:#fff;color:#000}}
 </style>
@@ -351,7 +360,7 @@ footer.site .small{color:var(--on-plate-2)}
 <header class="site"><div class="band">
 <div class="top"><a class="brand" href="/ru/"><svg class="chip" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg>NeedPro — справочник</a><a class="about" href="/ru/about/">О сайте</a><div class="controls"><nav class="langs" aria-label="Язык"><a class="lang" href="/visas-documents/passport-validity/" hreflang="en" lang="en" data-goatcounter-click="lang-en">English</a><span class="lang-here" lang="ru" aria-current="true">Русский</span></nav><button class="theme" type="button" hidden aria-label="Ночные страницы" aria-pressed="false"><span class="theme-day" aria-hidden="true">День</span><span class="theme-night" aria-hidden="true">Ночь</span></button></div></div>
 <div class="running"><p class="running-name"><a href="/ru/vizy-i-dokumenty/">Визы и документы</a></p></div>
-<nav class="tabs" aria-label="Разделы"><div class="tabs-row"><a href="/ru/vizy-i-dokumenty/" aria-current="page">Визы и документы</a><a href="/ru/zhile/">Жильё</a><a href="/ru/strahovka-i-zdorove/">Страховка и здоровье</a><a href="/ru/internet-i-svyaz/">Интернет и связь</a><a href="/ru/dengi-i-perevody/">Деньги и переводы</a><a href="/ru/bilety-i-transport/">Билеты и транспорт</a></div><details class="tabs-phone"><summary>Все разделы <span class="count">6</span></summary><div class="tabs-list"><a href="/ru/vizy-i-dokumenty/" aria-current="page">Визы и документы</a><a href="/ru/zhile/">Жильё</a><a href="/ru/strahovka-i-zdorove/">Страховка и здоровье</a><a href="/ru/internet-i-svyaz/">Интернет и связь</a><a href="/ru/dengi-i-perevody/">Деньги и переводы</a><a href="/ru/bilety-i-transport/">Билеты и транспорт</a></div></details></nav></div></header>
+<nav class="tabs" aria-label="Разделы"><div class="tabs-row"><a href="/ru/vizy-i-dokumenty/" aria-current="page">Визы и документы</a><a href="/ru/zhile/">Жильё</a><a href="/ru/strahovka-i-zdorove/">Страховка и здоровье</a><a href="/ru/internet-i-svyaz/">Интернет и связь</a><a href="/ru/dengi-i-perevody/">Деньги и переводы</a><a href="/ru/bilety-i-transport/">Билеты и транспорт</a><a href="/ru/pokupki-i-tehnika/">Покупки и техника</a><a href="/ru/perevozka-veshchej/">Перевозка вещей</a></div><details class="tabs-phone"><summary>Все разделы <span class="count">8</span></summary><div class="tabs-list"><a href="/ru/vizy-i-dokumenty/" aria-current="page">Визы и документы</a><a href="/ru/zhile/">Жильё</a><a href="/ru/strahovka-i-zdorove/">Страховка и здоровье</a><a href="/ru/internet-i-svyaz/">Интернет и связь</a><a href="/ru/dengi-i-perevody/">Деньги и переводы</a><a href="/ru/bilety-i-transport/">Билеты и транспорт</a><a href="/ru/pokupki-i-tehnika/">Покупки и техника</a><a href="/ru/perevozka-veshchej/">Перевозка вещей</a></div></details></nav></div></header>
 <script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
 <nav class="crumbs" aria-label="Навигация"><a href="/ru/">Главная</a> <span aria-hidden="true">›</span> <a href="/ru/vizy-i-dokumenty/">Визы и документы</a> <span aria-hidden="true">›</span> <span aria-current="page">Сколько должен действовать загранпаспорт для поездки</span></nav>
 <main id="main"><article class="sheet article"><div class="layout">
@@ -427,7 +436,68 @@ footer.site .small{color:var(--on-plate-2)}
 <td>2 сентября 2026 года</td>
 </tr>
 </tbody></table>
-</div><h2 id="shengen-i-italiya-3-mesyaca-i-pravilo-10-let">Шенген и Италия: 3 месяца и правило 10 лет</h2>
+</div><details class="embed">
+<summary>Добавить эту таблицу на свой сайт</summary>
+<p class="small">Таблицу можно бесплатно поставить на сайт, в блог или рассылку. Скопируйте код и вставьте его в страницу как HTML. Получится та же таблица, а под ней ссылка на эту страницу как на источник.</p>
+<label class="small" for="embed-t1">HTML-код</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Почему у разных стран разный срок&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Куда&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Сколько должен действовать паспорт&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Откуда правило&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Проверено&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Шенген (Италия, Франция, Германия и др.)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3 месяца после выезда из ЕС; выдан не раньше 10 лет назад&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Your Europe, Еврокомиссия&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30 октября 2026 года&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Турция&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;разрешённый срок пребывания плюс 60 дней&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Göç İdaresi&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30 октября 2026 года&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;ОАЭ&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;6 месяцев со дня въезда&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;u.ae&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30 октября 2026 года&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Индия&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;6 месяцев на день подачи заявления; для e-Visa — две чистые страницы&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;МВД Индии&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4 сентября 2026 года&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Индонезия, Бали (e-VOA)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;6 месяцев со дня въезда; нужен обратный билет&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;MOLINA, иммиграция Индонезии&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4 сентября 2026 года&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Великобритания&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;на весь срок пребывания&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;GOV.UK&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30 октября 2026 года&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Ирландия (виза C)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;6 месяцев после выезда из Ирландии&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Посольство Ирландии в Москве&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2 сентября 2026 года&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Источник: &lt;a href=&quot;https://blog.needpro.app/ru/vizy-i-dokumenty/zagranpasport-srok/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;NeedPro — справочник&lt;/a&gt;. Данные проверены 2 ноября 2026 г., официальные источники перечислены на странице.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Скопировано" hidden>Скопировать код</button></p>
+</details><h2 id="shengen-i-italiya-3-mesyaca-i-pravilo-10-let">Шенген и Италия: 3 месяца и правило 10 лет</h2>
 <p>Для Италии, Франции, Германии и остальных стран Шенгена действуют сразу два условия. Еврокомиссия на портале Your Europe пишет так: паспорт должен действовать минимум 3 месяца после даты, когда вы собираетесь покинуть ЕС, и должен быть выдан в последние 10 лет.</p>
 <p>Первое условие считается от дня выезда, а не въезда. Летите в Рим 1 июня и возвращаетесь 15 июня — паспорт должен действовать как минимум до 15 сентября. У самой даты выезда тоже есть предел: не больше 90 дней в любые 180. Посчитать его по датам поездок можно в <a href="/ru/vizy-i-dokumenty/kalkulyator-shengena/">калькуляторе Шенгена</a>.</p>
 <p>Второе условие многие пропускают. Паспорт может быть не просрочен, но если его выдали больше 10 лет назад, правило не выполнено. Поэтому смотрите обе даты на странице с фотографией: и окончания, и выдачи.</p>
@@ -445,9 +515,9 @@ footer.site .small{color:var(--on-plate-2)}
 <h2 id="velikobritaniya-i-irlandiya">Великобритания и Ирландия</h2>
 <p>Великобритания мягче остальных. GOV.UK пишет, что документ проверяют по прибытии и он должен действовать весь срок пребывания. Лишних месяцев британская граница не требует, но авиакомпании и страны пересадки бывают строже.</p>
 <p>Ирландия считает иначе. Для краткосрочной визы C паспорт должен действовать минимум 6 месяцев после запланированного выезда из Ирландии. Ирландия не входит в Шенген, шенгенская виза туда не подходит. Подробности для граждан России — в статье <a href="/ru/vizy-i-dokumenty/viza-irlandiya/">виза в Ирландию для россиян</a>.</p>
-<p>Канада правила о запасе месяцев не ставит, зато виза там не может действовать дольше паспорта. Об этом — в статье виза в Канаду для украинцев.</p>
+<p>Канада правила о запасе месяцев не ставит, зато виза там не может действовать дольше паспорта. Об этом — в статье <a href="/ru/vizy-i-dokumenty/viza-kanada-ukraina/">виза в Канаду для украинцев</a>.</p>
 <p>Какие страны пускают россиян без визы и на сколько дней, по их официальным сайтам, собрано в статье страны без визы для россиян. Отдельно разобраны три зимних направления: въезд в Таиланд, где паспорт должен быть просто действующим, виза в Египет с паспортом от 6 месяцев со дня прибытия и виза во Вьетнам.</p>
-<p>В Азии запас считают по-разному. Индия для электронной визы требует 6 месяцев срока паспорта на день подачи заявки и две чистые страницы — подробно в статье <a href="/ru/vizy-i-dokumenty/elektronnaya-viza-indiya/">электронная виза в Индию</a>. Индонезия считает 6 месяцев от дня въезда: <a href="/ru/vizy-i-dokumenty/viza-bali/">виза на Бали для россиян</a>. В Китай россияне ездят без визы до 30 дней — о сроках и условиях в статье <a href="/ru/vizy-i-dokumenty/bezviz-kitay/">безвиз с Китаем</a>, а о пересадках — транзит через Китай.</p>
+<p>В Азии запас считают по-разному. Индия для электронной визы требует 6 месяцев срока паспорта на день подачи заявки и две чистые страницы — подробно в статье <a href="/ru/vizy-i-dokumenty/elektronnaya-viza-indiya/">электронная виза в Индию</a>. Индонезия считает 6 месяцев от дня въезда: <a href="/ru/vizy-i-dokumenty/viza-bali/">виза на Бали для россиян</a>. В Китай россияне ездят без визы до 30 дней — о сроках и условиях в статье <a href="/ru/vizy-i-dokumenty/bezviz-kitay/">безвиз с Китаем</a>, а о пересадках — <a href="/ru/vizy-i-dokumenty/tranzit-kitay/">транзит через Китай</a>.</p>
 <h2 id="kak-proverit-svoj-pasport-pered-pokupkoj-biletov">Как проверить свой паспорт перед покупкой билетов</h2>
 <ol>
 <li>Найдите на странице с фотографией две даты: выдачи и окончания.</li>
@@ -461,13 +531,13 @@ footer.site .small{color:var(--on-plate-2)}
 <p>Если в таблице нет вашей страны или правило зависит от гражданства, <a href="https://t.me/NeedPRObot?start=blog">опишите свою поездку боту NeedPro</a>. Он ответит фактом из проверенного набора, со ссылкой на источник и датой проверки, а если такого факта нет, так и скажет.</p>
 <h2 id="kto-prinimaet-reshenie">Кто принимает решение</h2>
 <p>Мы пересказываем то, что написано на официальных страницах. На границе решает пограничник, при посадке — авиакомпания, по визе — консульство. Правила меняются, поэтому перед поездкой уточните их на официальном сайте страны или в её консульстве.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 
 <section class="faq"><h2 id="questions">Частые вопросы</h2><details><summary>Сколько должен действовать загранпаспорт для Турции?</summary><p>На 60 дней дольше разрешённого срока пребывания. Так написано на сайте миграционной службы Турции. Если вам разрешено 90 дней, паспорт должен действовать не меньше 150 дней со дня въезда.</p></details><details><summary>Можно ли поехать в Италию, если паспорт истекает через 2 месяца после возвращения?</summary><p>Нет. Для Италии и всего Шенгена паспорт должен действовать минимум 3 месяца после дня, когда вы собираетесь выехать из ЕС. Двух месяцев не хватит.</p></details><details><summary>Что значит правило 10 лет для шенгена?</summary><p>Паспорт должен быть выдан не раньше чем за 10 лет до въезда. Дату выдачи проверяют отдельно от даты окончания: неистёкший паспорт может не пройти по этому правилу.</p></details><details><summary>Сколько должен действовать паспорт для Бали?</summary><p>Бали — часть Индонезии. Портал иммиграционной службы Индонезии для визы по прибытии (e-VOA) требует паспорт, который действует не меньше 6 месяцев со дня въезда, и обратный билет.</p></details><details><summary>Считать 6 месяцев от вылета или от возвращения?</summary><p>Зависит от страны. ОАЭ и Индонезия считают от дня въезда, Шенген — от дня выезда, Индия — от дня подачи заявления на визу. Смотрите строку своей страны в таблице выше.</p></details></section>
 <section class="sources"><h2 id="sources">Источники</h2><ol><li><a href="https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm" rel="noopener">Travel documents for non-EU nationals</a>, Your Europe (Европейская комиссия)</li><li><a href="https://www.goc.gov.tr/vize-sss" rel="noopener">Vize — sıkça sorulan sorular</a>, Göç İdaresi Başkanlığı (миграционная служба Турции)</li><li><a href="https://u.ae/en/information-and-services/visa-and-emirates-id/Visa-information/do-you-need-an-entry-permit-or-a-visa-to-enter-the-uae" rel="noopener">Do you need an entry permit or a visa to enter the UAE?</a>, u.ae (портал правительства ОАЭ)</li><li><a href="https://indianvisaonline.gov.in/evisa/tvoa.html" rel="noopener">e-Visa: Instructions</a>, Бюро иммиграции Индии (indianvisaonline.gov.in)</li><li><a href="https://molina.imigrasi.go.id/" rel="noopener">MOLINA e-VOA</a>, Главное управление иммиграции Индонезии</li><li><a href="https://www.gov.uk/uk-border-control" rel="noopener">UK border control</a>, GOV.UK</li></ol></section>
 <p class="small how"><a href="/ru/about/">Как мы пишем эти страницы</a></p>
 
-<section class="related"><h2 id="read-next">Читайте дальше</h2><ul class="entries"><li><a href="/ru/vizy-i-dokumenty/viza-irlandiya/"><span class="entry-title">Виза в Ирландию для россиян: сбор, сроки, граница</span><span class="entry-desc">Россиянам нужна ирландская виза C: подача через VFS Global, сбор 60 евро за однократную и 100 за многократную, не раньше чем за 3 месяца до поездки.</span></a><time datetime="2026-11-05">5 ноября 2026 г.</time></li><li><a href="/ru/vizy-i-dokumenty/sistema-ees/"><span class="entry-title">Система EES: что это и как она считает дни в Шенгене</span><span class="entry-desc">EES — база ЕС, которая вместо штампов записывает въезды и выезды, отпечатки и фото. С 10 апреля 2026 года она работает в 29 странах и считает правило 90/180.</span></a><time datetime="2026-11-06">6 ноября 2026 г.</time></li></ul></section>
+<section class="related"><h2 id="read-next">Читайте дальше</h2><ul class="entries"><li><a href="/ru/vizy-i-dokumenty/viza-irlandiya/"><span class="entry-title">Виза в Ирландию для россиян: сбор, сроки, граница</span><span class="entry-desc">Россиянам нужна ирландская виза C: подача через VFS Global, сбор 60 евро за однократную и 100 за многократную, не раньше чем за 3 месяца до поездки.</span></a><time datetime="2026-11-05">5 ноября 2026 г.</time></li><li><a href="/ru/vizy-i-dokumenty/sistema-ees/"><span class="entry-title">Система EES: что это и как она считает дни в Шенгене</span><span class="entry-desc">EES — база ЕС, которая вместо штампов записывает въезды и выезды, отпечатки и фото. С 10 апреля 2026 года она работает в 29 странах и считает правило 90/180.</span></a><time datetime="2026-11-06">6 ноября 2026 г.</time></li><li><a href="/ru/vizy-i-dokumenty/viza-kanada-ukraina/"><span class="entry-title">Виза в Канаду для украинцев: цена, биометрия, срок</span><span class="entry-desc">Украинцам нужна гостевая виза Канады: сбор 100 CAD с человека и 85 CAD за биометрию. Срок пребывания ставит офицер на въезде, без штампа — 6 месяцев.</span></a><time datetime="2026-11-08">8 ноября 2026 г.</time></li></ul></section>
 </article><div class="bot-everywhere"><aside class="bot" aria-labelledby="bot-h"><div class="carrier"><div class="punch" aria-hidden="true"><svg class="chip-big" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg></div><div class="bot-text"><h2 id="bot-h">Спросите NeedPro</h2>
 <p>Опишите ситуацию своими словами. Бот ответит проверенным фактом, ссылкой на официальный источник и датой проверки.</p>
 <p><a class="button" href="https://t.me/NeedPRObot?start=blog" rel="noopener" data-goatcounter-click="bot">Открыть в Telegram</a></p>
