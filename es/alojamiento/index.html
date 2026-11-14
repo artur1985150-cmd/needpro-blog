@@ -9,6 +9,7 @@
 <link rel="alternate" hreflang="en" href="https://blog.needpro.app/where-to-stay/">
 <link rel="alternate" hreflang="ru" href="https://blog.needpro.app/ru/zhile/">
 <link rel="alternate" hreflang="es" href="https://blog.needpro.app/es/alojamiento/">
+<link rel="alternate" hreflang="de" href="https://blog.needpro.app/de/unterkunft/">
 <link rel="alternate" hreflang="x-default" href="https://blog.needpro.app/where-to-stay/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
@@ -264,7 +265,11 @@ td{background:var(--sheet)}
 .calc-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:4px 16px}
 .calc-field{min-width:0;margin:6px 0}
 .calc-field label{display:block;margin-bottom:4px;font:600 .9375rem/1.3 var(--frame);color:var(--ink)}
-.calc input{display:block;width:100%;min-width:0;max-width:16rem;min-height:44px;padding:6px 10px;font:500 1rem/1.2 var(--frame);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--sheet);border:1px solid var(--ink-2);border-radius:7px}
+.calc input,.calc select{display:block;width:100%;min-width:0;max-width:16rem;min-height:44px;padding:6px 10px;font:500 1rem/1.2 var(--frame);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--sheet);border:1px solid var(--ink-2);border-radius:7px}
+/* WebKit draws a native select at its own height and ignores min-height; menulist-button takes the height. */
+.calc select{-webkit-appearance:menulist-button;height:44px}
+.calc .table-wrap{margin:1.4rem 0 .4rem}
+.calc .table-wrap td:nth-child(2){min-width:13rem}
 .calc input[aria-invalid=true]{border:2px solid var(--ink);box-shadow:inset 0 -3px 0 var(--chip)}
 .calc-error{margin:.3rem 0 0;font:600 var(--t-label)/1.4 var(--frame);color:var(--ink)}
 .calc-error::before{content:"";display:inline-block;width:.55em;height:.55em;margin-right:.45em;background:var(--chip);border:1px solid var(--chip-line);transform:rotate(45deg) translateY(-.1em)}
@@ -387,9 +392,9 @@ footer.site .small{color:var(--on-plate-2)}
 <body>
 <a class="skip" href="#main">Ir al contenido</a>
 <header class="site"><div class="band">
-<div class="top"><a class="brand" href="/es/"><svg class="chip" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg>NeedPro Guías</a><a class="about" href="/es/about/">Sobre el sitio</a><div class="controls"><nav class="langs" aria-label="Idioma"><a class="lang" href="/where-to-stay/" hreflang="en" lang="en" data-goatcounter-click="lang-en">English</a><a class="lang" href="/ru/zhile/" hreflang="ru" lang="ru" data-goatcounter-click="lang-ru">Русский</a><span class="lang-here" lang="es" aria-current="true">Español</span></nav><button class="theme" type="button" hidden aria-label="Modo noche" aria-pressed="false"><span class="theme-day" aria-hidden="true">Día</span><span class="theme-night" aria-hidden="true">Noche</span></button></div></div>
+<div class="top"><a class="brand" href="/es/"><svg class="chip" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="chip-body" x="2" y="4" width="20" height="16" rx="3.5"/><path class="chip-lines" d="M2 9.5h6.5M2 14.5h6.5M15.5 9.5H22M15.5 14.5H22M8.5 4v16M15.5 4v16"/></svg>NeedPro Guías</a><a class="about" href="/es/about/">Sobre el sitio</a><div class="controls"><nav class="langs" aria-label="Idioma"><a class="lang" href="/where-to-stay/" hreflang="en" lang="en" data-goatcounter-click="lang-en">English</a><a class="lang" href="/ru/zhile/" hreflang="ru" lang="ru" data-goatcounter-click="lang-ru">Русский</a><span class="lang-here" lang="es" aria-current="true">Español</span><a class="lang" href="/de/unterkunft/" hreflang="de" lang="de" data-goatcounter-click="lang-de">Deutsch</a></nav><button class="theme" type="button" hidden aria-label="Modo noche" aria-pressed="false"><span class="theme-day" aria-hidden="true">Día</span><span class="theme-night" aria-hidden="true">Noche</span></button></div></div>
 <div class="running"><h1>Alojamiento</h1><p class="lead">Hoteles, pisos y alquileres largos en el extranjero: las normas y comprobaciones antes de pagar.</p></div>
-<nav class="tabs" aria-label="Secciones"><div class="tabs-row"><a href="/es/alojamiento/" aria-current="page">Alojamiento</a></div><details class="tabs-phone"><summary>Todas las secciones <span class="count">1</span></summary><div class="tabs-list"><a href="/es/alojamiento/" aria-current="page">Alojamiento</a></div></details></nav></div></header>
+<nav class="tabs" aria-label="Secciones"><div class="tabs-row"><a href="/es/alojamiento/" aria-current="page">Alojamiento</a><a href="/es/vuelos-y-transporte/">Vuelos y transporte</a></div><details class="tabs-phone"><summary>Todas las secciones <span class="count">2</span></summary><div class="tabs-list"><a href="/es/alojamiento/" aria-current="page">Alojamiento</a><a href="/es/vuelos-y-transporte/">Vuelos y transporte</a></div></details></nav></div></header>
 <script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
 <nav class="crumbs" aria-label="Ruta de navegación"><a href="/es/">Inicio</a> <span aria-hidden="true">›</span> <span aria-current="page">Alojamiento</span></nav>
 <main id="main"><div class="sheet hub">
