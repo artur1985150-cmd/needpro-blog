@@ -221,6 +221,13 @@ h3{font-size:var(--t-sub);line-height:1.3;font-weight:650;margin:1.7em 0 .35em}
 .prose blockquote{margin:1.6rem 0;padding:.7rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-style:italic;color:var(--ink-2)}
 .prose strong{font-weight:650}
 .prose em{font-style:italic}
+/* The picture drawn from the article's own steps, table or «In short» (scripts/images.mjs):
+   two files, one per theme; the one matching the page's theme shows (system or the switch). */
+.scheme{margin:1.8rem 0}
+.scheme img{max-width:100%;height:auto} /* its width attribute = the width it was drawn at (images.scheme_width) */
+.scheme-dark{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .scheme-light{display:none}:root:not([data-theme=light]) .scheme-dark{display:block}}
+:root[data-theme=dark] .scheme-light{display:none}:root[data-theme=dark] .scheme-dark{display:block}
 .prose code{font:500 .88em/1 ui-monospace,"SF Mono",Menlo,Consolas,monospace;background:var(--tint);border:1px solid var(--rule);padding:.05em .3em;border-radius:4px}
 .prose hr{border:0;border-top:1px dashed var(--rule);margin:2.4rem 0}
 .prose mark{background:var(--mark);color:var(--ink);padding:0 .1em}
